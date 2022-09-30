@@ -4,17 +4,25 @@
  */
 package uir;
 
+import empprofile.empinfo;
+
 /**
  *
  * @author DhiralM
  */
 public class ReadJPanel extends javax.swing.JPanel {
+    
+    
+    empinfo empinfo;
+    
 
     /**
      * Creates new form ReadJPanel
      */
-    public ReadJPanel() {
+    public ReadJPanel(empinfo empinfo) {
         initComponents();
+        
+        this.empinfo = empinfo;
     }
 
     /**

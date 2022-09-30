@@ -44,6 +44,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        CRUD.setAlignmentX(0.1F);
+
         Btncreate.setText("Create");
         Btncreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,6 +133,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void BtnreadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnreadActionPerformed
         // TODO add your handling code here:
+        
+        ReadJPanel readPanel = new ReadJPanel(empinfo);
+        jSplitPane1.setRightComponent(readPanel);
     }//GEN-LAST:event_BtnreadActionPerformed
 
     /**

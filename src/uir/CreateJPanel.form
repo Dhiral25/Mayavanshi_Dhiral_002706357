@@ -26,58 +26,58 @@
                       <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="JEmpPosTitle" min="-2" max="-2" attributes="0"/>
+                              <Component id="EmpPosTitle" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jtxtlpostitle" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="JEmpteaminfo" min="-2" max="-2" attributes="0"/>
+                              <Component id="Empteaminfo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jtxtlteaminfo" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="JEmpLevel" min="-2" max="-2" attributes="0"/>
+                              <Component id="EmpLevel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jtxtlevel" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="JEmpStartdate" min="-2" max="-2" attributes="0"/>
+                              <Component id="EmpStartdate" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jtxtstartdate" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="JEmpGender" min="-2" max="-2" attributes="0"/>
+                              <Component id="EmpGender" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jtxtgender" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="JEmpAge" min="-2" max="-2" attributes="0"/>
+                              <Component id="EmpAge" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jtxtempage" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="JEmpID" min="-2" max="-2" attributes="0"/>
+                              <Component id="EmpID" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jtxtempid" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="JEmpName2" min="-2" pref="111" max="-2" attributes="0"/>
+                              <Component id="EmpName2" min="-2" pref="111" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                               <Component id="jtxtname" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="JEmpPhNo" min="-2" max="-2" attributes="0"/>
+                              <Component id="EmpPhNo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jtxtphno" min="-2" pref="276" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="JEmpEmail" min="-2" max="-2" attributes="0"/>
+                                      <Component id="EmpEmail" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="JEmpPhoto" min="-2" max="-2" attributes="0"/>
+                                      <Component id="EmpPhoto" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -104,57 +104,57 @@
               <Component id="jTitle" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpName2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpName2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtname" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpID" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpID" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtempid" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpAge" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpAge" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtempage" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpGender" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpGender" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtgender" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpStartdate" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpStartdate" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtstartdate" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpLevel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpLevel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtlevel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpteaminfo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Empteaminfo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtlteaminfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpPosTitle" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpPosTitle" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtlpostitle" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpPhNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpPhNo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtphno" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JEmpEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpEmail" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jtxtphno1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="JEmpPhoto" min="-2" max="-2" attributes="0"/>
+                  <Component id="EmpPhoto" min="-2" max="-2" attributes="0"/>
                   <Component id="jScrollPane2" min="-2" pref="56" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -170,57 +170,57 @@
         <Property name="text" type="java.lang.String" value="Employee Data"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpID">
+    <Component class="javax.swing.JLabel" name="EmpID">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee ID"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpName2">
+    <Component class="javax.swing.JLabel" name="EmpName2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee Name"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpAge">
+    <Component class="javax.swing.JLabel" name="EmpAge">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s Age"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpGender">
+    <Component class="javax.swing.JLabel" name="EmpGender">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s Gender"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpStartdate">
+    <Component class="javax.swing.JLabel" name="EmpStartdate">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s StartDate"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpLevel">
+    <Component class="javax.swing.JLabel" name="EmpLevel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s Level"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpteaminfo">
+    <Component class="javax.swing.JLabel" name="Empteaminfo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s TeamInfo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpPosTitle">
+    <Component class="javax.swing.JLabel" name="EmpPosTitle">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s PositionTitle"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpPhNo">
+    <Component class="javax.swing.JLabel" name="EmpPhNo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s Phone No."/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpEmail">
+    <Component class="javax.swing.JLabel" name="EmpEmail">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s Email"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="JEmpPhoto">
+    <Component class="javax.swing.JLabel" name="EmpPhoto">
       <Properties>
         <Property name="text" type="java.lang.String" value="Employee&apos;s Picture"/>
       </Properties>
@@ -281,6 +281,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnSaveActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

@@ -16,6 +16,7 @@ public class empinfo {
     private String gender;
     private String level;
     private String teaminfo;
+    private String startdate;
     private String positiontitle;
     private String phno;
     private String emailadd;
