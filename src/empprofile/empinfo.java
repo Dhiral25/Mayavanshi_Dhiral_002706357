@@ -80,6 +80,8 @@ public class empinfo {
         this.startdate = startdate;
     }
 
+    
+
     public String getPositiontitle() {
         return positiontitle;
     }

@@ -68,6 +68,7 @@ public class ReadJPanel extends javax.swing.JPanel {
         jtxtlteaminfo = new javax.swing.JTextField();
         EmpPosTitle = new javax.swing.JLabel();
         jtxtlpostitle = new javax.swing.JTextField();
+        btnUpdate = new javax.swing.JButton();
 
         jTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jTitle.setText("View Employee Data ");
@@ -173,14 +174,17 @@ public class ReadJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnUpdate.setText("Update");
+        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpdateActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Btndisplay)
-                .addGap(331, 331, 331))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 965, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -232,6 +236,12 @@ public class ReadJPanel extends javax.swing.JPanel {
                                     .addComponent(Btndelete)
                                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(129, 129, 129))))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnUpdate)
+                    .addComponent(Btndisplay))
+                .addGap(328, 328, 328))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -252,7 +262,9 @@ public class ReadJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(EmpID, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jtxtempid, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnUpdate)
+                .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EmpAge)
                     .addComponent(jtxtempage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -317,7 +329,7 @@ public class ReadJPanel extends javax.swing.JPanel {
         jtxtlteaminfo.setText(String.valueOf(selectedInfo.getTeaminfo()));
         jtxtstartdate.setText(String.valueOf(selectedInfo.getStartdate()));
         jtxtlpostitle.setText(String.valueOf(selectedInfo.getPositiontitle()));
-        jtxtphno.setText(String.valueOf(selectedInfo.getPhno()));
+        jtxtphno.setText(String.valueOf((char) selectedInfo.getPhno()));
         jtxtphno1.setText(String.valueOf(selectedInfo.getEmailadd()));
         jTxtpic.setText(String.valueOf(selectedInfo.getPic()));
         
@@ -376,6 +388,39 @@ public class ReadJPanel extends javax.swing.JPanel {
         
     }//GEN-LAST:event_BtndeleteActionPerformed
 
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        // TODO add your handling code here:
+        DefaultTableModel empprofile = (DefaultTableModel) tblempinfo.getModel();
+        int selectedRowIndex = tblempinfo.getSelectedRow();
+        
+        empinfo ei = (empinfo) empprofile.getValueAt(selectedRowIndex, 0);
+        
+        ei.setName(jtxtname.getText());
+        ei.setEmpid(Integer.parseInt(jtxtempid.getText()));
+        ei.setAge(Integer.parseInt(jtxtempage.getText()));
+        ei.setGender(jtxtgender.getText());
+        ei.setLevel(Integer.parseInt(jtxtlevel.getText()));
+        ei.setTeaminfo(jtxtlteaminfo.getText());
+        ei.setStartdate(Integer.parseInt(jtxtstartdate.getText()));
+        ei.setPositiontitle(jtxtlpostitle.getText());
+        ei.setPhno(Integer.parseInt(jtxtphno.getText()));
+        ei.setEmailadd(jtxtphno1.getText());
+        ei.setPic(jTxtpic.getText());
+        
+        history.updateInfo(selectedRowIndex, ei);
+        
+        JOptionPane.showMessageDialog(this, "Details Updated");
+        if (selectedRowIndex<0) {
+            
+            JOptionPane.showMessageDialog(this, " Error Updating");
+        }
+        else{
+            populateTable();
+        }
+      
+        
+    }//GEN-LAST:event_btnUpdateActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btndelete;
@@ -391,6 +436,7 @@ public class ReadJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel EmpPosTitle;
     private javax.swing.JLabel EmpStartdate;
     private javax.swing.JLabel Empteaminfo;
+    private javax.swing.JButton btnUpdate;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel jTitle;

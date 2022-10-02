@@ -37,6 +37,12 @@ public class Emphistory {
     public void deleteInfo(empinfo ei){
         history.remove(ei);
     }
+
+    public void updateInfo(int selectedRowIndex, empinfo ei) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    
     
     
 }
