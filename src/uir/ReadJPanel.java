@@ -6,8 +6,12 @@ package uir;
 
 import empprofile.Emphistory;
 import empprofile.empinfo;
+import java.io.File;
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 
@@ -51,9 +55,6 @@ public class ReadJPanel extends javax.swing.JPanel {
         jtxtphno = new javax.swing.JTextField();
         EmpEmail = new javax.swing.JLabel();
         jtxtphno1 = new javax.swing.JTextField();
-        EmpPhoto = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTxtpic = new javax.swing.JTextPane();
         jtxtname = new javax.swing.JTextField();
         jtxtempid = new javax.swing.JTextField();
         jtxtempage = new javax.swing.JTextField();
@@ -73,6 +74,9 @@ public class ReadJPanel extends javax.swing.JPanel {
         btnUpdate = new javax.swing.JButton();
         Btnsearch = new javax.swing.JButton();
         searchtxt = new javax.swing.JTextField();
+        jLablelImage = new javax.swing.JLabel();
+        jBtnbrowseimg = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         jTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jTitle.setText("View Employee Data ");
@@ -127,10 +131,6 @@ public class ReadJPanel extends javax.swing.JPanel {
                 jtxtphno1ActionPerformed(evt);
             }
         });
-
-        EmpPhoto.setText("Employee's Picture");
-
-        jScrollPane2.setViewportView(jTxtpic);
 
         jtxtgender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,6 +193,13 @@ public class ReadJPanel extends javax.swing.JPanel {
             }
         });
 
+        jBtnbrowseimg.setText("Display Employee Picture");
+        jBtnbrowseimg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnbrowseimgActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -201,12 +208,17 @@ public class ReadJPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 965, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnUpdate)
+                    .addComponent(Btndisplay)
+                    .addComponent(Btnsearch)
+                    .addComponent(searchtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(84, 84, 84))
             .addGroup(layout.createSequentialGroup()
                 .addGap(96, 96, 96)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(EmpEmail)
@@ -237,25 +249,22 @@ public class ReadJPanel extends javax.swing.JPanel {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jtxtphno, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
                                         .addComponent(jtxtphno1, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(EmpPhoto))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jtxtphno, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jBtnbrowseimg)
+                                        .addGap(57, 57, 57)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(Btndelete)
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(129, 129, 129))))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnUpdate)
-                    .addComponent(Btndisplay)
-                    .addComponent(Btnsearch)
-                    .addComponent(searchtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(84, 84, 84))
+                                    .addComponent(jLablelImage, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(112, 112, 112))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -306,20 +315,18 @@ public class ReadJPanel extends javax.swing.JPanel {
                     .addComponent(jtxtlpostitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(EmpPosTitle))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(EmpPhNo)
-                            .addComponent(jtxtphno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(EmpPhoto)
-                            .addComponent(EmpEmail)
-                            .addComponent(jtxtphno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(19, 19, 19))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EmpPhNo)
+                    .addComponent(jtxtphno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EmpEmail)
+                    .addComponent(jtxtphno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLablelImage, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBtnbrowseimg))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(99, 99, 99))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -348,7 +355,7 @@ public class ReadJPanel extends javax.swing.JPanel {
         jtxtlpostitle.setText(String.valueOf(selectedInfo.getPositiontitle()));
         jtxtphno.setText(String.valueOf((char) selectedInfo.getPhno()));
         jtxtphno1.setText(String.valueOf(selectedInfo.getEmailadd()));
-        jTxtpic.setText(String.valueOf(selectedInfo.getPic()));
+        jLablelImage.setText(String.valueOf(selectedInfo.getPic()));
         
        
         
@@ -411,7 +418,6 @@ public class ReadJPanel extends javax.swing.JPanel {
         int selectedRowIndex = tblempinfo.getSelectedRow();
         
         empinfo ei = (empinfo) empprofile.getValueAt(selectedRowIndex, 0);
-        
         ei.setName(jtxtname.getText());
         ei.setEmpid(Integer.parseInt(jtxtempid.getText()));
         ei.setAge(Integer.parseInt(jtxtempage.getText()));
@@ -422,7 +428,7 @@ public class ReadJPanel extends javax.swing.JPanel {
         ei.setPositiontitle(jtxtlpostitle.getText());
         ei.setPhno(Long.parseLong(jtxtphno.getText()));
         ei.setEmailadd(jtxtphno1.getText());
-        ei.setPic(jTxtpic.getText());
+        ei.setPic(jLablelImage.getText());
         
         history.updateInfo(selectedRowIndex, ei);
         
@@ -447,6 +453,32 @@ public class ReadJPanel extends javax.swing.JPanel {
         
     }//GEN-LAST:event_searchtxtKeyPressed
 
+    private void jBtnbrowseimgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnbrowseimgActionPerformed
+        // TODO add your handling code here:
+        
+        // TODO add your handling code here:
+        
+        JFileChooser jLabelImage = new JFileChooser();
+        //Files Image extensions
+        FileNameExtensionFilter fnef = new FileNameExtensionFilter("IMAGE", "png", "jpg", "jpeg");
+        jLabelImage.addChoosableFileFilter(fnef);
+        
+        int showOpenDialogue = jLabelImage.showOpenDialog(null);
+        if (showOpenDialogue == JFileChooser.APPROVE_OPTION){
+            File selectedImageFile = jLabelImage.getSelectedFile();
+            String selectedImagePath = selectedImageFile.getAbsolutePath();
+            JOptionPane.showMessageDialog(null, selectedImagePath);
+            
+            //Display Image on jabel
+            
+            ImageIcon ii = new ImageIcon(selectedImagePath);
+            
+            jLablelImage.setIcon(ii);
+            jTextField1.setText(selectedImagePath);
+           // String image = selectedImagePath;
+        }
+    }//GEN-LAST:event_jBtnbrowseimgActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btndelete;
@@ -459,15 +491,15 @@ public class ReadJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel EmpLevel;
     private javax.swing.JLabel EmpName2;
     private javax.swing.JLabel EmpPhNo;
-    private javax.swing.JLabel EmpPhoto;
     private javax.swing.JLabel EmpPosTitle;
     private javax.swing.JLabel EmpStartdate;
     private javax.swing.JLabel Empteaminfo;
     private javax.swing.JButton btnUpdate;
+    private javax.swing.JButton jBtnbrowseimg;
+    private javax.swing.JLabel jLablelImage;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel jTitle;
-    private javax.swing.JTextPane jTxtpic;
     private javax.swing.JTextField jtxtempage;
     private javax.swing.JTextField jtxtempid;
     private javax.swing.JTextField jtxtgender;

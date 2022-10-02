@@ -4,6 +4,7 @@
  */
 package empprofile;
 
+import java.awt.image.BufferedImage;
 import java.util.Date;
 
 /**
@@ -112,7 +113,9 @@ public class empinfo {
 
     public void setPic(String pic) {
         this.pic = pic;
-    }    
+    }
+
+    
          
     /**
      *
