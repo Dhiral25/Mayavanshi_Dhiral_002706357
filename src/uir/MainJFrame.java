@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package uir;
-import empprofile.empinfo;
+import empprofile.Emphistory;
+
 
 /**
  *
@@ -15,13 +16,16 @@ public class MainJFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
     
-    empinfo empinfo;
+    
+    Emphistory history;
     
     
     public MainJFrame() {
         initComponents();
         
-        empinfo = new empinfo();
+       
+        history = new Emphistory();
+        
         
     }
 
@@ -34,109 +38,109 @@ public class MainJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSplitPane1 = new javax.swing.JSplitPane();
-        CRUD = new javax.swing.JPanel();
-        Btncreate = new javax.swing.JButton();
-        Btnread = new javax.swing.JButton();
-        Btnupdate = new javax.swing.JButton();
-        Btndelete = new javax.swing.JButton();
-        workpanel = new javax.swing.JPanel();
+        SplitPane = new javax.swing.JSplitPane();
+        MenuPanel = new javax.swing.JPanel();
+        BtnCreate = new javax.swing.JButton();
+        BtnRead = new javax.swing.JButton();
+        BtnUpdate = new javax.swing.JButton();
+        WorkPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        CRUD.setAlignmentX(0.1F);
-
-        Btncreate.setText("Create");
-        Btncreate.addActionListener(new java.awt.event.ActionListener() {
+        BtnCreate.setText("Create");
+        BtnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtncreateActionPerformed(evt);
+                BtnCreateActionPerformed(evt);
             }
         });
 
-        Btnread.setText("Read");
-        Btnread.addActionListener(new java.awt.event.ActionListener() {
+        BtnRead.setText("View");
+        BtnRead.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnreadActionPerformed(evt);
+                BtnReadActionPerformed(evt);
             }
         });
 
-        Btnupdate.setText("Update");
+        BtnUpdate.setText("Update");
+        BtnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnUpdateActionPerformed(evt);
+            }
+        });
 
-        Btndelete.setText("Delete");
-
-        javax.swing.GroupLayout CRUDLayout = new javax.swing.GroupLayout(CRUD);
-        CRUD.setLayout(CRUDLayout);
-        CRUDLayout.setHorizontalGroup(
-            CRUDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CRUDLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(CRUDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Btndelete)
-                    .addComponent(Btnupdate)
-                    .addComponent(Btnread)
-                    .addComponent(Btncreate))
-                .addContainerGap(309, Short.MAX_VALUE))
+        javax.swing.GroupLayout MenuPanelLayout = new javax.swing.GroupLayout(MenuPanel);
+        MenuPanel.setLayout(MenuPanelLayout);
+        MenuPanelLayout.setHorizontalGroup(
+            MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuPanelLayout.createSequentialGroup()
+                .addContainerGap(22, Short.MAX_VALUE)
+                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BtnCreate, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(BtnRead, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(BtnUpdate, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
 
-        CRUDLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {Btncreate, Btndelete, Btnread, Btnupdate});
+        MenuPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {BtnCreate, BtnRead, BtnUpdate});
 
-        CRUDLayout.setVerticalGroup(
-            CRUDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CRUDLayout.createSequentialGroup()
-                .addContainerGap(75, Short.MAX_VALUE)
-                .addComponent(Btncreate)
+        MenuPanelLayout.setVerticalGroup(
+            MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuPanelLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(BtnCreate)
                 .addGap(18, 18, 18)
-                .addComponent(Btnread)
+                .addComponent(BtnRead)
                 .addGap(18, 18, 18)
-                .addComponent(Btnupdate)
-                .addGap(18, 18, 18)
-                .addComponent(Btndelete)
-                .addGap(79, 79, 79))
+                .addComponent(BtnUpdate)
+                .addContainerGap(150, Short.MAX_VALUE))
         );
 
-        jSplitPane1.setRightComponent(CRUD);
+        SplitPane.setLeftComponent(MenuPanel);
 
-        javax.swing.GroupLayout workpanelLayout = new javax.swing.GroupLayout(workpanel);
-        workpanel.setLayout(workpanelLayout);
-        workpanelLayout.setHorizontalGroup(
-            workpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        javax.swing.GroupLayout WorkPanelLayout = new javax.swing.GroupLayout(WorkPanel);
+        WorkPanel.setLayout(WorkPanelLayout);
+        WorkPanelLayout.setHorizontalGroup(
+            WorkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 295, Short.MAX_VALUE)
         );
-        workpanelLayout.setVerticalGroup(
-            workpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        WorkPanelLayout.setVerticalGroup(
+            WorkPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        jSplitPane1.setLeftComponent(workpanel);
+        SplitPane.setRightComponent(WorkPanel);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(SplitPane)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1)
+            .addComponent(SplitPane)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BtncreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtncreateActionPerformed
+    private void BtnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnUpdateActionPerformed
         // TODO add your handling code here:
-        
-        
-       CreateJPanel createPanel = new CreateJPanel(empinfo); //this is to store reference to store information
-       jSplitPane1.setRightComponent(createPanel);
-    }//GEN-LAST:event_BtncreateActionPerformed
+        UpdateJPanel UpdatePanel = new UpdateJPanel(history);
+        SplitPane.setRightComponent(UpdatePanel);
+    }//GEN-LAST:event_BtnUpdateActionPerformed
 
-    private void BtnreadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnreadActionPerformed
+    private void BtnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCreateActionPerformed
         // TODO add your handling code here:
-        
-        ReadJPanel readPanel = new ReadJPanel(empinfo);
-        jSplitPane1.setRightComponent(readPanel);
-    }//GEN-LAST:event_BtnreadActionPerformed
+        CreateJPanel createPanel = new CreateJPanel(history);
+        SplitPane.setRightComponent(createPanel);
+    }//GEN-LAST:event_BtnCreateActionPerformed
+
+    private void BtnReadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnReadActionPerformed
+        // TODO add your handling code here:
+        ReadJPanel ReadPanel = new ReadJPanel(history);
+        SplitPane.setRightComponent(ReadPanel);
+    }//GEN-LAST:event_BtnReadActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,12 +178,11 @@ public class MainJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Btncreate;
-    private javax.swing.JButton Btndelete;
-    private javax.swing.JButton Btnread;
-    private javax.swing.JButton Btnupdate;
-    private javax.swing.JPanel CRUD;
-    private javax.swing.JSplitPane jSplitPane1;
-    private javax.swing.JPanel workpanel;
+    private javax.swing.JButton BtnCreate;
+    private javax.swing.JButton BtnRead;
+    private javax.swing.JButton BtnUpdate;
+    private javax.swing.JPanel MenuPanel;
+    private javax.swing.JSplitPane SplitPane;
+    private javax.swing.JPanel WorkPanel;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,7 +4,10 @@
  */
 package uir;
 
+import empprofile.Emphistory;
 import empprofile.empinfo;
+
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -12,15 +15,15 @@ import empprofile.empinfo;
  */
 public class CreateJPanel extends javax.swing.JPanel {
     
-    empinfo empinfo;
+    Emphistory history;
 
     /**
      * Creates new form CreateJPanel
      */
-    public CreateJPanel(empinfo empinfo) {
+    public CreateJPanel(Emphistory history) {
         initComponents();
         
-        this.empinfo = empinfo;
+        this.history = history;
     }
 
     /**
@@ -196,7 +199,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(215, 215, 215)
                         .addComponent(jBtnSave)))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(219, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -247,7 +250,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(EmpPhoto)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addComponent(jBtnSave))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -282,16 +285,47 @@ public class CreateJPanel extends javax.swing.JPanel {
 
     private void jBtnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSaveActionPerformed
         // TODO add your handling code here:
+       
+        String name = jtxtname.getText();
+        int empid = Integer.parseInt(jtxtempid.getText());
+        int age = Integer.parseInt(jtxtempage.getText());
+        String gender = jtxtgender.getText();
+        int level = Integer.parseInt(jtxtlevel.getText());
+        String teaminfo = jtxtlteaminfo.getText();
+        int startdate = Integer.parseInt(jtxtstartdate.getText());
+        String positiontitle = jtxtlpostitle.getText();
+        int phno = Integer.parseInt(jtxtphno.getText());
+        String emailadd = jtxtphno1.getText();
+        String pic = jTxtpic.getText();
         
-        empinfo.setName(jtxtname.getText());
-        empinfo.setEmpid(jtxtempid.getText());
-        empinfo.setAge(jtxtempage.getText());
-        empinfo.setGender(jtxtgender.getText());
-        empinfo.setTeaminfo(jtxtlteaminfo.getText());
-        empinfo.setPositiontitle(jtxtlpostitle.getText());
-        empinfo.setPhno(jtxtphno.getText());
-        empinfo.setEmailadd(jtxtphno1.getText());
-        empinfo.setPic(jTxtpic.getText());
+        empinfo ei = history.addNewInfo();
+        
+        ei.setName(name);
+        ei.setEmpid(empid);
+        ei.setAge(age);
+        ei.setGender(gender);
+        ei.setLevel(level);
+        ei.setTeaminfo(teaminfo);
+        ei.setStartdate(startdate);
+        ei.setPositiontitle(positiontitle);
+        ei.setPhno(phno);
+        ei.setEmailadd(emailadd);
+        ei.setPic(pic);
+
+        JOptionPane.showMessageDialog(this, "Employee Information Saved.");
+        
+        jtxtname.setText("");
+        jtxtempid.setText("");
+        jtxtempage.setText("");
+        jtxtgender.setText("");
+        jtxtlevel.setText("");
+        jtxtlteaminfo.setText("");
+        jtxtstartdate.setText("");
+        jtxtlpostitle.setText("");
+        jtxtphno.setText("");
+        jtxtphno1.setText("");
+        jTxtpic.setText("");
+        
         
     }//GEN-LAST:event_jBtnSaveActionPerformed
 

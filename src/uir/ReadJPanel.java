@@ -4,7 +4,10 @@
  */
 package uir;
 
+import empprofile.Emphistory;
 import empprofile.empinfo;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -13,16 +16,19 @@ import empprofile.empinfo;
 public class ReadJPanel extends javax.swing.JPanel {
     
     
-    empinfo empinfo;
+    Emphistory history;
+    
     
 
     /**
      * Creates new form ReadJPanel
      */
-    public ReadJPanel(empinfo empinfo) {
+    public ReadJPanel(Emphistory history) {
         initComponents();
         
-        this.empinfo = empinfo;
+        this.history = history;
+        
+        populateTable();
     }
 
     /**
@@ -35,74 +41,73 @@ public class ReadJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jTitle = new javax.swing.JLabel();
-        JEmpteaminfo = new javax.swing.JLabel();
-        jtxtgender = new javax.swing.JTextField();
-        JEmpPosTitle = new javax.swing.JLabel();
-        jtxtstartdate = new javax.swing.JTextField();
-        JEmpID = new javax.swing.JLabel();
-        JEmpPhNo = new javax.swing.JLabel();
-        jtxtlevel = new javax.swing.JTextField();
-        JEmpEmail = new javax.swing.JLabel();
-        jtxtlteaminfo = new javax.swing.JTextField();
-        JEmpPhoto = new javax.swing.JLabel();
-        jtxtlpostitle = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblempinfo = new javax.swing.JTable();
+        Btndisplay = new javax.swing.JButton();
+        Btndelete = new javax.swing.JButton();
+        EmpPhNo = new javax.swing.JLabel();
         jtxtphno = new javax.swing.JTextField();
-        JEmpName2 = new javax.swing.JLabel();
+        EmpEmail = new javax.swing.JLabel();
         jtxtphno1 = new javax.swing.JTextField();
-        JEmpAge = new javax.swing.JLabel();
-        JEmpGender = new javax.swing.JLabel();
-        jtxtname = new javax.swing.JTextField();
-        JEmpStartdate = new javax.swing.JLabel();
-        jtxtempid = new javax.swing.JTextField();
-        JEmpLevel = new javax.swing.JLabel();
-        jtxtempage = new javax.swing.JTextField();
+        EmpPhoto = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTxtpic = new javax.swing.JTextPane();
+        jtxtname = new javax.swing.JTextField();
+        jtxtempid = new javax.swing.JTextField();
+        jtxtempage = new javax.swing.JTextField();
+        jtxtgender = new javax.swing.JTextField();
+        jtxtstartdate = new javax.swing.JTextField();
+        jtxtlevel = new javax.swing.JTextField();
+        EmpID = new javax.swing.JLabel();
+        EmpName2 = new javax.swing.JLabel();
+        EmpAge = new javax.swing.JLabel();
+        EmpGender = new javax.swing.JLabel();
+        EmpStartdate = new javax.swing.JLabel();
+        EmpLevel = new javax.swing.JLabel();
+        Empteaminfo = new javax.swing.JLabel();
+        jtxtlteaminfo = new javax.swing.JTextField();
+        EmpPosTitle = new javax.swing.JLabel();
+        jtxtlpostitle = new javax.swing.JTextField();
 
         jTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jTitle.setText("View Employee Data");
+        jTitle.setText("View Employee Data ");
 
-        JEmpteaminfo.setText("Employee's TeamInfo");
+        tblempinfo.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Employee Name", "Employee Id", "Employee Position Title"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
 
-        jtxtgender.addActionListener(new java.awt.event.ActionListener() {
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(tblempinfo);
+
+        Btndisplay.setText("Display");
+        Btndisplay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtgenderActionPerformed(evt);
+                BtndisplayActionPerformed(evt);
             }
         });
 
-        JEmpPosTitle.setText("Employee's PositionTitle");
-
-        jtxtstartdate.addActionListener(new java.awt.event.ActionListener() {
+        Btndelete.setText("Delete");
+        Btndelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtstartdateActionPerformed(evt);
+                BtndeleteActionPerformed(evt);
             }
         });
 
-        JEmpID.setText("Employee ID");
-
-        JEmpPhNo.setText("Employee's Phone No.");
-
-        jtxtlevel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtlevelActionPerformed(evt);
-            }
-        });
-
-        JEmpEmail.setText("Employee's Email");
-
-        jtxtlteaminfo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtlteaminfoActionPerformed(evt);
-            }
-        });
-
-        JEmpPhoto.setText("Employee's Picture");
-
-        jtxtlpostitle.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtlpostitleActionPerformed(evt);
-            }
-        });
+        EmpPhNo.setText("Employee's Phone No.");
 
         jtxtphno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,7 +115,7 @@ public class ReadJPanel extends javax.swing.JPanel {
             }
         });
 
-        JEmpName2.setText("Employee Name");
+        EmpEmail.setText("Employee's Email");
 
         jtxtphno1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,127 +123,215 @@ public class ReadJPanel extends javax.swing.JPanel {
             }
         });
 
-        JEmpAge.setText("Employee's Age");
-
-        JEmpGender.setText("Employee's Gender");
-
-        JEmpStartdate.setText("Employee's StartDate");
-
-        JEmpLevel.setText("Employee's Level");
+        EmpPhoto.setText("Employee's Picture");
 
         jScrollPane2.setViewportView(jTxtpic);
+
+        jtxtgender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtgenderActionPerformed(evt);
+            }
+        });
+
+        jtxtstartdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtstartdateActionPerformed(evt);
+            }
+        });
+
+        jtxtlevel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtlevelActionPerformed(evt);
+            }
+        });
+
+        EmpID.setText("Employee ID");
+
+        EmpName2.setText("Employee Name");
+
+        EmpAge.setText("Employee's Age");
+
+        EmpGender.setText("Employee's Gender");
+
+        EmpStartdate.setText("Employee's StartDate");
+
+        EmpLevel.setText("Employee's Level");
+
+        Empteaminfo.setText("Employee's TeamInfo");
+
+        jtxtlteaminfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtlteaminfoActionPerformed(evt);
+            }
+        });
+
+        EmpPosTitle.setText("Employee's PositionTitle");
+
+        jtxtlpostitle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtlpostitleActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Btndisplay)
+                .addGap(331, 331, 331))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 965, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGap(96, 96, 96)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(JEmpPosTitle)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jtxtlpostitle, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(JEmpteaminfo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jtxtlteaminfo, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(JEmpLevel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jtxtlevel, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(JEmpStartdate)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jtxtstartdate, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(JEmpGender)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jtxtgender, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(JEmpAge)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jtxtempage, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(JEmpID)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jtxtempid, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(JEmpName2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(72, 72, 72)
-                        .addComponent(jtxtname, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(JEmpPhNo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jtxtphno, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(EmpEmail)
+                            .addComponent(EmpPhNo)
+                            .addComponent(EmpPosTitle)
+                            .addComponent(Empteaminfo)
+                            .addComponent(EmpLevel)
+                            .addComponent(EmpStartdate)
+                            .addComponent(EmpGender)
+                            .addComponent(EmpAge)
+                            .addComponent(EmpID)
+                            .addComponent(EmpName2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(JEmpEmail)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(jtxtlpostitle, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jtxtname, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jtxtempid, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jtxtempage, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jtxtgender, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jtxtstartdate, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jtxtlevel, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jtxtlteaminfo, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(JEmpPhoto)
-                                .addGap(84, 84, 84)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jtxtphno1, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jtxtphno1, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(EmpPhoto))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jtxtphno, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Btndelete)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(129, 129, 129))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpName2)
+                    .addComponent(Btndisplay)
+                    .addComponent(Btndelete))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EmpName2)
                     .addComponent(jtxtname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpID)
-                    .addComponent(jtxtempid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(EmpID, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jtxtempid, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpAge)
+                    .addComponent(EmpAge)
                     .addComponent(jtxtempage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpGender)
+                    .addComponent(EmpGender)
                     .addComponent(jtxtgender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpStartdate)
+                    .addComponent(EmpStartdate)
                     .addComponent(jtxtstartdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpLevel)
-                    .addComponent(jtxtlevel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(EmpLevel, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jtxtlevel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpteaminfo)
+                    .addComponent(Empteaminfo)
                     .addComponent(jtxtlteaminfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpPosTitle)
-                    .addComponent(jtxtlpostitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtxtlpostitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EmpPosTitle))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpPhNo)
-                    .addComponent(jtxtphno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JEmpEmail)
-                    .addComponent(jtxtphno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JEmpPhoto)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(EmpPhNo)
+                            .addComponent(jtxtphno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(EmpPhoto)
+                            .addComponent(EmpEmail)
+                            .addComponent(jtxtphno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(19, 19, 19))))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BtndisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtndisplayActionPerformed
+        // TODO add your handling code here:
+        
+        int selectedRowIndex = tblempinfo.getSelectedRow();
+        
+        if (selectedRowIndex<0) {
+            
+            JOptionPane.showMessageDialog(this, "Please select the row to be deleted");
+            return;
+        }
+        
+        DefaultTableModel empprofile = (DefaultTableModel) tblempinfo.getModel();
+        empinfo selectedInfo = (empinfo) empprofile.getValueAt(selectedRowIndex, 0);
+        
+       
+        jtxtname.setText(String.valueOf(selectedInfo.getName()));
+        jtxtempid.setText(String.valueOf(selectedInfo.getEmpid()));
+        jtxtempage.setText(String.valueOf(selectedInfo.getAge()));
+        jtxtgender.setText(String.valueOf(selectedInfo.getGender()));
+        jtxtlevel.setText(String.valueOf(selectedInfo.getLevel()));
+        jtxtlteaminfo.setText(String.valueOf(selectedInfo.getTeaminfo()));
+        jtxtstartdate.setText(String.valueOf(selectedInfo.getStartdate()));
+        jtxtlpostitle.setText(String.valueOf(selectedInfo.getPositiontitle()));
+        jtxtphno.setText(String.valueOf(selectedInfo.getPhno()));
+        jtxtphno1.setText(String.valueOf(selectedInfo.getEmailadd()));
+        jTxtpic.setText(String.valueOf(selectedInfo.getPic()));
+        
+       
+        
+    }//GEN-LAST:event_BtndisplayActionPerformed
+
+    private void jtxtphnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtphnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtxtphnoActionPerformed
+
+    private void jtxtphno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtphno1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtxtphno1ActionPerformed
 
     private void jtxtgenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtgenderActionPerformed
         // TODO add your handling code here:
@@ -260,27 +353,45 @@ public class ReadJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jtxtlpostitleActionPerformed
 
-    private void jtxtphnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtphnoActionPerformed
+    private void BtndeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtndeleteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jtxtphnoActionPerformed
-
-    private void jtxtphno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtphno1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtxtphno1ActionPerformed
+        int selectedRowIndex = tblempinfo.getSelectedRow();
+        
+        if (selectedRowIndex<0) {
+            
+            JOptionPane.showMessageDialog(this, "Please select the row to be deleted");
+            return;
+        }
+        
+        DefaultTableModel empprofile = (DefaultTableModel) tblempinfo.getModel();
+        empinfo selectedInfo = (empinfo) empprofile.getValueAt(selectedRowIndex, 0);
+        
+        history.deleteInfo(selectedInfo);
+        
+        JOptionPane.showMessageDialog(this, "Employee Data Deleted");
+        
+        populateTable();
+        
+        
+        
+    }//GEN-LAST:event_BtndeleteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel JEmpAge;
-    private javax.swing.JLabel JEmpEmail;
-    private javax.swing.JLabel JEmpGender;
-    private javax.swing.JLabel JEmpID;
-    private javax.swing.JLabel JEmpLevel;
-    private javax.swing.JLabel JEmpName2;
-    private javax.swing.JLabel JEmpPhNo;
-    private javax.swing.JLabel JEmpPhoto;
-    private javax.swing.JLabel JEmpPosTitle;
-    private javax.swing.JLabel JEmpStartdate;
-    private javax.swing.JLabel JEmpteaminfo;
+    private javax.swing.JButton Btndelete;
+    private javax.swing.JButton Btndisplay;
+    private javax.swing.JLabel EmpAge;
+    private javax.swing.JLabel EmpEmail;
+    private javax.swing.JLabel EmpGender;
+    private javax.swing.JLabel EmpID;
+    private javax.swing.JLabel EmpLevel;
+    private javax.swing.JLabel EmpName2;
+    private javax.swing.JLabel EmpPhNo;
+    private javax.swing.JLabel EmpPhoto;
+    private javax.swing.JLabel EmpPosTitle;
+    private javax.swing.JLabel EmpStartdate;
+    private javax.swing.JLabel Empteaminfo;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel jTitle;
     private javax.swing.JTextPane jTxtpic;
@@ -294,5 +405,42 @@ public class ReadJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField jtxtphno;
     private javax.swing.JTextField jtxtphno1;
     private javax.swing.JTextField jtxtstartdate;
+    private javax.swing.JTable tblempinfo;
     // End of variables declaration//GEN-END:variables
+
+    
+    private void populateTable() {
+        
+        DefaultTableModel empprofile = (DefaultTableModel) tblempinfo.getModel();
+        empprofile.setRowCount(0);
+        
+        for (empinfo ei : history.getHistory()){
+            
+            Object[] row = new Object[10];
+            row[0] = ei;
+            row[1] = ei.getEmpid();
+            row[2] = ei.getGender();
+            row[3] = ei.getStartdate();
+            row[4] = ei.getLevel();
+            row[5] = ei.getTeaminfo();
+            row[6] = ei.getPositiontitle();
+            row[7] = ei.getPhno();
+            row[8] = ei.getEmailadd();
+            row[9] = ei.getPic();
+            
+            
+            
+            empprofile.addRow(row);
+            
+            
+            
+          
+        }
+        
+       
+        
+        
+    
+    
+    }
 }

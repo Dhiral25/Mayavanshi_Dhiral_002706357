@@ -4,6 +4,9 @@
  */
 package uir;
 
+import empprofile.Emphistory;
+import empprofile.empinfo;
+
 /**
  *
  * @author DhiralM
@@ -13,8 +16,14 @@ public class UpdateJPanel extends javax.swing.JPanel {
     /**
      * Creates new form UpdateJPanel
      */
-    public UpdateJPanel() {
+    
+    Emphistory history;
+    
+    
+    public UpdateJPanel(Emphistory history) {
         initComponents();
+        
+        this.history = history;
     }
 
     /**

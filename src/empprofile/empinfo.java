@@ -1,8 +1,10 @@
-/*
+/*l
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package empprofile;
+
+import java.util.Date;
 
 /**
  *
@@ -11,14 +13,14 @@ package empprofile;
 public class empinfo {
     
     private String name;
-    private String empid;
-    private String age;
+    private int empid;
+    private int age;
     private String gender;
-    private String level;
+    private int level;
     private String teaminfo;
-    private String startdate;
+    private int startdate;
     private String positiontitle;
-    private String phno;
+    private int phno;
     private String emailadd;
     private String pic;
 
@@ -30,19 +32,19 @@ public class empinfo {
         this.name = name;
     }
 
-    public String getEmpid() {
+    public int getEmpid() {
         return empid;
     }
 
-    public void setEmpid(String empid) {
+    public void setEmpid(int empid) {
         this.empid = empid;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -54,11 +56,11 @@ public class empinfo {
         this.gender = gender;
     }
 
-    public String getLevel() {
+    public int getLevel() {
         return level;
     }
 
-    public void setLevel(String level) {
+    public void setLevel(int level) {
         this.level = level;
     }
 
@@ -70,6 +72,14 @@ public class empinfo {
         this.teaminfo = teaminfo;
     }
 
+    public int getStartdate() {
+        return startdate;
+    }
+
+    public void setStartdate(int startdate) {
+        this.startdate = startdate;
+    }
+
     public String getPositiontitle() {
         return positiontitle;
     }
@@ -78,11 +88,11 @@ public class empinfo {
         this.positiontitle = positiontitle;
     }
 
-    public String getPhno() {
+    public int getPhno() {
         return phno;
     }
 
-    public void setPhno(String phno) {
+    public void setPhno(int phno) {
         this.phno = phno;
     }
 
@@ -100,12 +110,12 @@ public class empinfo {
 
     public void setPic(String pic) {
         this.pic = pic;
-    }
-    
-    
-    
-    
-    
-    
+    }    
          
+    
+    @Override
+    
+    public String toString(){
+        
+    }
 }
