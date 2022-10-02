@@ -7,7 +7,9 @@ package uir;
 import empprofile.Emphistory;
 import empprofile.empinfo;
 import javax.swing.JOptionPane;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -69,6 +71,8 @@ public class ReadJPanel extends javax.swing.JPanel {
         EmpPosTitle = new javax.swing.JLabel();
         jtxtlpostitle = new javax.swing.JTextField();
         btnUpdate = new javax.swing.JButton();
+        Btnsearch = new javax.swing.JButton();
+        searchtxt = new javax.swing.JTextField();
 
         jTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jTitle.setText("View Employee Data ");
@@ -181,6 +185,14 @@ public class ReadJPanel extends javax.swing.JPanel {
             }
         });
 
+        Btnsearch.setText("Search");
+
+        searchtxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                searchtxtKeyPressed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -240,13 +252,15 @@ public class ReadJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnUpdate)
-                    .addComponent(Btndisplay))
-                .addGap(328, 328, 328))
+                    .addComponent(Btndisplay)
+                    .addComponent(Btnsearch)
+                    .addComponent(searchtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(84, 84, 84))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(18, 18, 18)
                 .addComponent(jTitle)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -254,7 +268,7 @@ public class ReadJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Btndisplay)
                     .addComponent(Btndelete))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EmpName2)
                     .addComponent(jtxtname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -264,11 +278,14 @@ public class ReadJPanel extends javax.swing.JPanel {
                     .addComponent(jtxtempid, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnUpdate)
-                .addGap(24, 24, 24)
+                .addGap(65, 65, 65)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EmpAge)
-                    .addComponent(jtxtempage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(jtxtempage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Btnsearch))
+                .addGap(12, 12, 12)
+                .addComponent(searchtxt)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EmpGender)
                     .addComponent(jtxtgender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -399,11 +416,11 @@ public class ReadJPanel extends javax.swing.JPanel {
         ei.setEmpid(Integer.parseInt(jtxtempid.getText()));
         ei.setAge(Integer.parseInt(jtxtempage.getText()));
         ei.setGender(jtxtgender.getText());
-        ei.setLevel(Integer.parseInt(jtxtlevel.getText()));
+        ei.setLevel(jtxtlevel.getText());
         ei.setTeaminfo(jtxtlteaminfo.getText());
         ei.setStartdate(Integer.parseInt(jtxtstartdate.getText()));
         ei.setPositiontitle(jtxtlpostitle.getText());
-        ei.setPhno(Integer.parseInt(jtxtphno.getText()));
+        ei.setPhno(Long.parseLong(jtxtphno.getText()));
         ei.setEmailadd(jtxtphno1.getText());
         ei.setPic(jTxtpic.getText());
         
@@ -421,10 +438,20 @@ public class ReadJPanel extends javax.swing.JPanel {
         
     }//GEN-LAST:event_btnUpdateActionPerformed
 
+    private void searchtxtKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchtxtKeyPressed
+        // TODO add your handling code here:
+        DefaultTableModel empprofile = (DefaultTableModel) tblempinfo.getModel();
+        TableRowSorter<DefaultTableModel> eip = new TableRowSorter<DefaultTableModel>(empprofile);
+        tblempinfo.setRowSorter(eip);
+        eip.setRowFilter(RowFilter.regexFilter(searchtxt.getText().trim()));
+        
+    }//GEN-LAST:event_searchtxtKeyPressed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btndelete;
     private javax.swing.JButton Btndisplay;
+    private javax.swing.JButton Btnsearch;
     private javax.swing.JLabel EmpAge;
     private javax.swing.JLabel EmpEmail;
     private javax.swing.JLabel EmpGender;
@@ -451,6 +478,7 @@ public class ReadJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField jtxtphno;
     private javax.swing.JTextField jtxtphno1;
     private javax.swing.JTextField jtxtstartdate;
+    private javax.swing.JTextField searchtxt;
     private javax.swing.JTable tblempinfo;
     // End of variables declaration//GEN-END:variables
 

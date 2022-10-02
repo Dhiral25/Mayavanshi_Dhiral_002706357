@@ -16,11 +16,11 @@ public class empinfo {
     private int empid;
     private int age;
     private String gender;
-    private int level;
+    private String level;
     private String teaminfo;
     private int startdate;
     private String positiontitle;
-    private int phno;
+    private long phno;
     private String emailadd;
     private String pic;
 
@@ -56,11 +56,11 @@ public class empinfo {
         this.gender = gender;
     }
 
-    public int getLevel() {
+    public String getLevel() {
         return level;
     }
 
-    public void setLevel(int level) {
+    public void setLevel(String level) {
         this.level = level;
     }
 
@@ -90,11 +90,11 @@ public class empinfo {
         this.positiontitle = positiontitle;
     }
 
-    public int getPhno() {
+    public long getPhno() {
         return phno;
     }
 
-    public void setPhno(int phno) {
+    public void setPhno(long phno) {
         this.phno = phno;
     }
 

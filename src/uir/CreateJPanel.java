@@ -290,7 +290,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         int empid = Integer.parseInt(jtxtempid.getText());
         int age = Integer.parseInt(jtxtempage.getText());
         String gender = jtxtgender.getText();
-        int level = Integer.parseInt(jtxtlevel.getText());
+        String level = jtxtlevel.getText();
         String teaminfo = jtxtlteaminfo.getText();
         int startdate = Integer.parseInt(jtxtstartdate.getText());
         String positiontitle = jtxtlpostitle.getText();
