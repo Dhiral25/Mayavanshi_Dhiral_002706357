@@ -112,10 +112,14 @@ public class empinfo {
         this.pic = pic;
     }    
          
-    
+    /**
+     *
+     * @return
+     */
     @Override
     
     public String toString(){
+        return name;
         
     }
 }
