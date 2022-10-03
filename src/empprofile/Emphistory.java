@@ -38,10 +38,6 @@ public class Emphistory {
         history.remove(ei);
     }
 
-    public void updateInfo( int selectedRowIndex, empinfo ei) {
-        deleteInfo(ei);
-        empinfo eim = null;
-        history.add(eim);
         
         
         
@@ -54,7 +50,7 @@ public class Emphistory {
         
         
      
-    }
+    
 
     
     

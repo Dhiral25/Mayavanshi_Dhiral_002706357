@@ -42,7 +42,6 @@ public class MainJFrame extends javax.swing.JFrame {
         MenuPanel = new javax.swing.JPanel();
         BtnCreate = new javax.swing.JButton();
         BtnRead = new javax.swing.JButton();
-        BtnUpdate = new javax.swing.JButton();
         WorkPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,13 +60,6 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
-        BtnUpdate.setText("Update");
-        BtnUpdate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnUpdateActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout MenuPanelLayout = new javax.swing.GroupLayout(MenuPanel);
         MenuPanel.setLayout(MenuPanelLayout);
         MenuPanelLayout.setHorizontalGroup(
@@ -76,12 +68,11 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap(22, Short.MAX_VALUE)
                 .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(BtnCreate, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(BtnRead, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(BtnUpdate, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(BtnRead, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
 
-        MenuPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {BtnCreate, BtnRead, BtnUpdate});
+        MenuPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {BtnCreate, BtnRead});
 
         MenuPanelLayout.setVerticalGroup(
             MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,9 +81,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(BtnCreate)
                 .addGap(18, 18, 18)
                 .addComponent(BtnRead)
-                .addGap(18, 18, 18)
-                .addComponent(BtnUpdate)
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(191, Short.MAX_VALUE))
         );
 
         SplitPane.setLeftComponent(MenuPanel);
@@ -123,12 +112,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void BtnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnUpdateActionPerformed
-        // TODO add your handling code here:
-        UpdateJPanel UpdatePanel = new UpdateJPanel(history);
-        SplitPane.setRightComponent(UpdatePanel);
-    }//GEN-LAST:event_BtnUpdateActionPerformed
 
     private void BtnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCreateActionPerformed
         // TODO add your handling code here:
@@ -180,7 +163,6 @@ public class MainJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnCreate;
     private javax.swing.JButton BtnRead;
-    private javax.swing.JButton BtnUpdate;
     private javax.swing.JPanel MenuPanel;
     private javax.swing.JSplitPane SplitPane;
     private javax.swing.JPanel WorkPanel;

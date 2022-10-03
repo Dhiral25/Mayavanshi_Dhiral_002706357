@@ -89,7 +89,7 @@ public class ReadJPanel extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Employee Name", "Employee Id", "Employee Position Title"
+                "Employee Name", "Employee Id", "Employee Gender"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -433,16 +433,17 @@ public class ReadJPanel extends javax.swing.JPanel {
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         // TODO add your handling code here:
-        DefaultTableModel empprofile = (DefaultTableModel) tblempinfo.getModel();
-        empprofile.setValueAt(jtxtname.getText(),tblempinfo.getSelectedRow(),0);
-        empprofile.setValueAt(jtxtempid.getText(),tblempinfo.getSelectedRow(),0);
-        empprofile.setValueAt(jtxtgender.getText(),tblempinfo.getSelectedRow(),0);
-        empprofile.setValueAt(jtxtlevel.getText(),tblempinfo.getSelectedRow(),0);
-        empprofile.setValueAt(jtxtlteaminfo.getText(),tblempinfo.getSelectedRow(),0);
-        empprofile.setValueAt(jtxtstartdate.getText(),tblempinfo.getSelectedRow(),0);
-        empprofile.setValueAt(jtxtlpostitle.getText(),tblempinfo.getSelectedRow(),0);
-        empprofile.setValueAt(jtxtphno.getText(),tblempinfo.getSelectedRow(),0);
-        empprofile.setValueAt(jtxtphno1.getText(),tblempinfo.getSelectedRow(),0);
+        DefaultTableModel empinfo = (DefaultTableModel) tblempinfo.getModel();
+        empinfo.setValueAt(jtxtname.getText(),tblempinfo.getSelectedRow(),0);
+        empinfo.setValueAt(jtxtempid.getText(),tblempinfo.getSelectedRow(),1);
+        empinfo.setValueAt(jtxtgender.getText(),tblempinfo.getSelectedRow(),2);
+        empinfo.setValueAt(jtxtlevel.getText(),tblempinfo.getSelectedRow(),3);
+        empinfo.setValueAt(jtxtlteaminfo.getText(),tblempinfo.getSelectedRow(),4);
+        empinfo.setValueAt(jtxtstartdate.getText(),tblempinfo.getSelectedRow(),5);
+        empinfo.setValueAt(jtxtlpostitle.getText(),tblempinfo.getSelectedRow(),6);
+        empinfo.setValueAt(jtxtphno.getText(),tblempinfo.getSelectedRow(),7);
+        empinfo.setValueAt(jtxtphno1.getText(),tblempinfo.getSelectedRow(),8);
+        
         
         
         

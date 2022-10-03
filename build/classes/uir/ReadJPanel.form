@@ -193,7 +193,7 @@
               <Table columnCount="3" rowCount="4">
                 <Column editable="false" title="Employee Name" type="java.lang.Object"/>
                 <Column editable="false" title="Employee Id" type="java.lang.Object"/>
-                <Column editable="false" title="Employee Position Title" type="java.lang.Object"/>
+                <Column editable="false" title="Employee Gender" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
