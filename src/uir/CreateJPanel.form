@@ -63,7 +63,7 @@
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="EmpName2" min="-2" pref="111" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Component id="jtxtname" min="-2" pref="276" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
@@ -231,14 +231,21 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jtxtname">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtxtnameKeyPressed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jtxtempid">
     </Component>
     <Component class="javax.swing.JTextField" name="jtxtempage">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtxtempageKeyPressed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jtxtgender">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtxtgenderActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtxtgenderKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jtxtstartdate">
@@ -264,6 +271,7 @@
     <Component class="javax.swing.JTextField" name="jtxtphno">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtxtphnoActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jtxtphnoKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jtxtphno1">

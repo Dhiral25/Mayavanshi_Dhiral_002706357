@@ -326,7 +326,7 @@ public class ReadJPanel extends javax.swing.JPanel {
                     .addComponent(jBtnbrowseimg))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(99, 99, 99))
+                .addGap(204, 204, 204))
         );
     }// </editor-fold>//GEN-END:initComponents
 

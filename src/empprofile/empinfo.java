@@ -21,7 +21,7 @@ public class empinfo {
     private String teaminfo;
     private int startdate;
     private String positiontitle;
-    private long phno;
+    private int phno;
     private String emailadd;
     private String pic;
 
@@ -91,11 +91,11 @@ public class empinfo {
         this.positiontitle = positiontitle;
     }
 
-    public long getPhno() {
+    public int getPhno() {
         return phno;
     }
 
-    public void setPhno(long phno) {
+    public void setPhno(int phno) {
         this.phno = phno;
     }
 

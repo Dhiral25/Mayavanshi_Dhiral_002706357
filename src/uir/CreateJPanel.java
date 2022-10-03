@@ -6,6 +6,7 @@ package uir;
 
 import empprofile.Emphistory;
 import empprofile.empinfo;
+import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.swing.ImageIcon;
@@ -89,9 +90,26 @@ public class CreateJPanel extends javax.swing.JPanel {
 
         EmpEmail.setText("Employee's Email");
 
+        jtxtname.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtxtnameKeyPressed(evt);
+            }
+        });
+
+        jtxtempage.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtxtempageKeyPressed(evt);
+            }
+        });
+
         jtxtgender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxtgenderActionPerformed(evt);
+            }
+        });
+        jtxtgender.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtxtgenderKeyPressed(evt);
             }
         });
 
@@ -122,6 +140,11 @@ public class CreateJPanel extends javax.swing.JPanel {
         jtxtphno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxtphnoActionPerformed(evt);
+            }
+        });
+        jtxtphno.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtxtphnoKeyPressed(evt);
             }
         });
 
@@ -194,7 +217,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                                     .addComponent(jtxtempid, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(EmpName2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(72, 72, 72)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jtxtname, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(EmpPhNo)
@@ -385,6 +408,60 @@ public class CreateJPanel extends javax.swing.JPanel {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jtxtphnoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtxtphnoKeyPressed
+        // TODO add your handling code here:
+        //action when key is pressed 
+        //get jtxtphno string
+        
+        
+        char c =evt.getKeyChar();
+        if(Character.isDigit(c) || Character.isISOControl(c)){
+            jtxtphno.setEditable(true);
+        }
+        else{
+            jtxtphno.setEditable(false);
+        }
+       
+    }//GEN-LAST:event_jtxtphnoKeyPressed
+
+    private void jtxtgenderKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtxtgenderKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isLetter(c) || Character.isISOControl(c))
+        {
+            jtxtgender.setEditable(true);
+        }
+        else{
+          jtxtgender.setEditable(false);
+        }
+
+
+
+    }//GEN-LAST:event_jtxtgenderKeyPressed
+
+    private void jtxtnameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtxtnameKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isLetter(c) ||Character.isISOControl(c) || Character.isWhitespace(c))
+        {
+            jtxtname.setEditable(true);
+        }
+        else{
+            jtxtname.setEditable(false);
+        }
+    }//GEN-LAST:event_jtxtnameKeyPressed
+
+    private void jtxtempageKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtxtempageKeyPressed
+        // TODO add your handling code here:
+        char c =evt.getKeyChar();
+        if(Character.isDigit(c) || Character.isISOControl(c)){
+            jtxtempage.setEditable(true);
+        }
+        else{
+            jtxtempage.setEditable(false);
+        }
+    }//GEN-LAST:event_jtxtempageKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
