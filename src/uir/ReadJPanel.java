@@ -357,7 +357,26 @@ public class ReadJPanel extends javax.swing.JPanel {
         jtxtphno1.setText(String.valueOf(selectedInfo.getEmailadd()));
         jLablelImage.setText(String.valueOf(selectedInfo.getPic()));
         
-       
+        
+       JFileChooser jLabelImage = new JFileChooser();
+        //Files Image extensions
+        FileNameExtensionFilter fnef = new FileNameExtensionFilter("IMAGE", "png", "jpg", "jpeg");
+        jLabelImage.addChoosableFileFilter(fnef);
+        
+        int showOpenDialogue = jLabelImage.showOpenDialog(null);
+        if (showOpenDialogue == JFileChooser.APPROVE_OPTION){
+            File selectedImageFile = jLabelImage.getSelectedFile();
+            String selectedImagePath = selectedImageFile.getAbsolutePath();
+            JOptionPane.showMessageDialog(null, selectedImagePath);
+            
+            //Display Image on jabel
+            
+            ImageIcon ii = new ImageIcon(selectedImagePath);
+            
+            jLablelImage.setIcon(ii);
+            jTextField1.setText(selectedImagePath);
+           // String image = selectedImagePath;
+        }
         
     }//GEN-LAST:event_BtndisplayActionPerformed
 
@@ -415,7 +434,20 @@ public class ReadJPanel extends javax.swing.JPanel {
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         // TODO add your handling code here:
         DefaultTableModel empprofile = (DefaultTableModel) tblempinfo.getModel();
-        int selectedRowIndex = tblempinfo.getSelectedRow();
+        empprofile.setValueAt(jtxtname.getText(),tblempinfo.getSelectedRow(),0);
+        empprofile.setValueAt(jtxtempid.getText(),tblempinfo.getSelectedRow(),0);
+        empprofile.setValueAt(jtxtgender.getText(),tblempinfo.getSelectedRow(),0);
+        empprofile.setValueAt(jtxtlevel.getText(),tblempinfo.getSelectedRow(),0);
+        empprofile.setValueAt(jtxtlteaminfo.getText(),tblempinfo.getSelectedRow(),0);
+        empprofile.setValueAt(jtxtstartdate.getText(),tblempinfo.getSelectedRow(),0);
+        empprofile.setValueAt(jtxtlpostitle.getText(),tblempinfo.getSelectedRow(),0);
+        empprofile.setValueAt(jtxtphno.getText(),tblempinfo.getSelectedRow(),0);
+        empprofile.setValueAt(jtxtphno1.getText(),tblempinfo.getSelectedRow(),0);
+        
+        
+        
+        
+        /*int selectedRowIndex = tblempinfo.getSelectedRow();
         
         empinfo ei = (empinfo) empprofile.getValueAt(selectedRowIndex, 0);
         ei.setName(jtxtname.getText());
@@ -430,7 +462,7 @@ public class ReadJPanel extends javax.swing.JPanel {
         ei.setEmailadd(jtxtphno1.getText());
         ei.setPic(jLablelImage.getText());
         
-        history.updateInfo(selectedRowIndex, ei);
+        /*history.updateInfo(selectedRowIndex, ei);
         
         JOptionPane.showMessageDialog(this, "Details Updated");
         if (selectedRowIndex<0) {
@@ -439,7 +471,7 @@ public class ReadJPanel extends javax.swing.JPanel {
         }
         else{
             populateTable();
-        }
+        }*/
       
         
     }//GEN-LAST:event_btnUpdateActionPerformed
@@ -458,25 +490,7 @@ public class ReadJPanel extends javax.swing.JPanel {
         
         // TODO add your handling code here:
         
-        JFileChooser jLabelImage = new JFileChooser();
-        //Files Image extensions
-        FileNameExtensionFilter fnef = new FileNameExtensionFilter("IMAGE", "png", "jpg", "jpeg");
-        jLabelImage.addChoosableFileFilter(fnef);
         
-        int showOpenDialogue = jLabelImage.showOpenDialog(null);
-        if (showOpenDialogue == JFileChooser.APPROVE_OPTION){
-            File selectedImageFile = jLabelImage.getSelectedFile();
-            String selectedImagePath = selectedImageFile.getAbsolutePath();
-            JOptionPane.showMessageDialog(null, selectedImagePath);
-            
-            //Display Image on jabel
-            
-            ImageIcon ii = new ImageIcon(selectedImagePath);
-            
-            jLablelImage.setIcon(ii);
-            jTextField1.setText(selectedImagePath);
-           // String image = selectedImagePath;
-        }
     }//GEN-LAST:event_jBtnbrowseimgActionPerformed
 
 

@@ -337,6 +337,9 @@ public class CreateJPanel extends javax.swing.JPanel {
 
         JOptionPane.showMessageDialog(this, "Employee Information Saved.");
         
+       
+       
+        
         jtxtname.setText("");
         jtxtempid.setText("");
         jtxtempage.setText("");
@@ -348,6 +351,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         jtxtphno.setText("");
         jtxtphno1.setText("");
         jLablelImage.setText("");
+        
         
         
     }//GEN-LAST:event_jBtnSaveActionPerformed
