@@ -19,7 +19,7 @@ public class empinfo {
     private String gender;
     private String level;
     private String teaminfo;
-    private int startdate;
+    private String startdate;
     private String positiontitle;
     private int phno;
     private String emailadd;
@@ -73,11 +73,11 @@ public class empinfo {
         this.teaminfo = teaminfo;
     }
 
-    public int getStartdate() {
+    public String getStartdate() {
         return startdate;
     }
 
-    public void setStartdate(int startdate) {
+    public void setStartdate(String startdate) {
         this.startdate = startdate;
     }
 
