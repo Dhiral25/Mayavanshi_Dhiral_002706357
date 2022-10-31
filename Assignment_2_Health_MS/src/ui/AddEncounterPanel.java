@@ -18,7 +18,7 @@ import model.SystemAdmin;
 
 /**
  *
- * @author adityaraj
+ * @author DhiralM
  */
 public class AddEncounterPanel extends javax.swing.JPanel {
 

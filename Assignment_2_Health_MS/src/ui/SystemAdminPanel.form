@@ -209,14 +209,14 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jSplitPaneHospitalDirectory" alignment="0" pref="758" max="32767" attributes="0"/>
+                      <Component id="jSplitPaneHospitalDirectory" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jSplitPaneHospitalDirectory" pref="393" max="32767" attributes="0"/>
+                          <Component id="jSplitPaneHospitalDirectory" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -315,7 +315,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jSplitPaneDoctorsDirectory" pref="746" max="32767" attributes="0"/>
+                          <Component id="jSplitPaneDoctorsDirectory" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -324,7 +324,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jSplitPaneDoctorsDirectory" pref="393" max="32767" attributes="0"/>
+                          <Component id="jSplitPaneDoctorsDirectory" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -421,7 +421,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jSplitPanePatientDirectory" pref="746" max="32767" attributes="0"/>
+                          <Component id="jSplitPanePatientDirectory" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -430,7 +430,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jSplitPanePatientDirectory" pref="393" max="32767" attributes="0"/>
+                          <Component id="jSplitPanePatientDirectory" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -525,12 +525,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jSplitPaneEncountersDirectory" alignment="0" pref="758" max="32767" attributes="0"/>
+                      <Component id="jSplitPaneEncountersDirectory" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jSplitPaneEncountersDirectory" alignment="0" pref="399" max="32767" attributes="0"/>
+                      <Component id="jSplitPaneEncountersDirectory" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>

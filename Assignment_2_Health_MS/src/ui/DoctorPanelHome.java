@@ -6,7 +6,7 @@ package ui;
 
 /**
  *
- * @author adityaraj
+ * @author DhiralM
  */
 public class DoctorPanelHome extends javax.swing.JPanel {
 

@@ -6,7 +6,7 @@ package ui;
 
 /**
  *
- * @author adityaraj
+ * @author DhiralM
  */
 public class CommunityLoginPanel extends javax.swing.JPanel {
 

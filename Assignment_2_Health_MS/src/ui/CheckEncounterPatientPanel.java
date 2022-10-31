@@ -13,7 +13,7 @@ import model.SystemAdmin;
 
 /**
  *
- * @author adityaraj
+ * @author DhiralM
  */
 public class CheckEncounterPatientPanel extends javax.swing.JPanel {
 

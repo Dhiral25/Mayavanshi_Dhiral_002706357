@@ -11,7 +11,7 @@ import model.SystemAdmin;
 
 /**
  *
- * @author adityaraj
+ * @author DhiralM
  */
 public class CreateCityPanel extends javax.swing.JPanel {
 

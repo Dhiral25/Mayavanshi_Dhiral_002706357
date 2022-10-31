@@ -19,7 +19,7 @@ import model.SystemAdmin;
 
 /**
  *
- * @author adityaraj
+ * @author DhiralM
  */
 public class ViewEncountersPanel extends javax.swing.JPanel {
 

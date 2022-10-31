@@ -12,7 +12,7 @@ import model.SystemAdmin;
 
 /**
  *
- * @author adityaraj
+ * @author DhiralM
  */
 public class ViewCityPanel extends javax.swing.JPanel {
 

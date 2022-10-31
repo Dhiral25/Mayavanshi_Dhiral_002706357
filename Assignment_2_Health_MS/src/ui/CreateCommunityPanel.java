@@ -12,7 +12,7 @@ import model.SystemAdmin;
 
 /**
  *
- * @author adityaraj
+ * @author DhiralM
  */
 public class CreateCommunityPanel extends javax.swing.JPanel {
 
