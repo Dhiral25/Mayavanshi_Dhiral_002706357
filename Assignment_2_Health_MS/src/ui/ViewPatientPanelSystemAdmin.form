@@ -27,12 +27,7 @@
                       <Component id="jScrollPane1" min="-2" pref="836" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="96" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="lblPatientFundamentals" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="365" max="-2" attributes="0"/>
+              <EmptySpace pref="212" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
@@ -89,6 +84,7 @@
                                   <Component id="txtPatientAllergies" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                   <Component id="txtPatientWeight" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                   <Component id="txtPatientHeight" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="lblPatientFundamentals" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -127,18 +123,9 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="195" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btnDeletePatient" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="btnviewPatientDetails" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btnupdatePatientDetails" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblPatientFundamentals" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                           <Component id="lblPatientName" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtPatientName" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -172,8 +159,21 @@
                           </Group>
                       </Group>
                   </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="btnDeletePatient" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Component id="btnviewPatientDetails" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btnupdatePatientDetails" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="lblPatientFundamentals" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -208,7 +208,7 @@
                   <Component id="lblPatientEmailAddress" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtPatientEmailAddress" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="10" max="32767" attributes="0"/>
+              <EmptySpace pref="90" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

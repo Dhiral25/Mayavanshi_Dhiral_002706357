@@ -71,7 +71,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="lblPatientUsername" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="txtPatientUsername" pref="150" max="32767" attributes="0"/>
+                                      <Component id="txtPatientUsername" pref="302" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="btnSavePatient" alignment="0" max="32767" attributes="0"/>
                               </Group>
@@ -195,7 +195,7 @@
               </Group>
               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
               <Component id="btnSavePatient" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="183" max="32767" attributes="0"/>
+              <EmptySpace pref="180" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

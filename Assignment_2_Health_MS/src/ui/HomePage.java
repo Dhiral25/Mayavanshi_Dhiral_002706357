@@ -112,7 +112,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(btnDoctor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnPatient)
-                .addContainerGap(407, Short.MAX_VALUE))
+                .addContainerGap(477, Short.MAX_VALUE))
         );
 
         splitPaneMainPage.setLeftComponent(controlPanel);
@@ -126,21 +126,21 @@ public class HomePage extends javax.swing.JFrame {
         viewPanelLayout.setHorizontalGroup(
             viewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, viewPanelLayout.createSequentialGroup()
-                .addContainerGap(373, Short.MAX_VALUE)
+                .addContainerGap(403, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(78, 78, 78))
         );
         viewPanelLayout.setVerticalGroup(
             viewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, viewPanelLayout.createSequentialGroup()
-                .addContainerGap(116, Short.MAX_VALUE)
+                .addContainerGap(186, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 475, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49))
         );
 
         splitPaneMainPage.setRightComponent(viewPanel);
 
-        getContentPane().add(splitPaneMainPage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 640));
+        getContentPane().add(splitPaneMainPage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 710));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

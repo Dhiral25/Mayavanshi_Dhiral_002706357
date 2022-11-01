@@ -173,7 +173,7 @@ public class CreatePatientPanel extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(lblPatientUsername)
                                         .addGap(18, 18, 18)
-                                        .addComponent(txtPatientUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE))
+                                        .addComponent(txtPatientUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 302, Short.MAX_VALUE))
                                     .addComponent(btnSavePatient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(212, 212, 212)
@@ -266,7 +266,7 @@ public class CreatePatientPanel extends javax.swing.JPanel {
                     .addComponent(txtPatientAllergies, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(48, 48, 48)
                 .addComponent(btnSavePatient)
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap(180, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
