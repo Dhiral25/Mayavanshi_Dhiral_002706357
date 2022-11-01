@@ -44,7 +44,8 @@ public class ViewDoctorsPatientPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblDoctorsList = new javax.swing.JTable();
 
-        jLabel1.setText("View Doctors Near You");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel1.setText("View Doctors Near Your Location\n");
 
         tblDoctorsList.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -80,7 +81,7 @@ public class ViewDoctorsPatientPanel extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(40, 40, 40)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(457, Short.MAX_VALUE))
+                .addContainerGap(453, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

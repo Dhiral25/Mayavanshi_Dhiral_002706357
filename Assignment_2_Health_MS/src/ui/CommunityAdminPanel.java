@@ -45,6 +45,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
         txtCommunityAdminUsername = new javax.swing.JTextField();
         txtCommunityAdminPassword = new javax.swing.JTextField();
         btnCommunityAdminLogin = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         jSplitPaneCommunityAdmin = new javax.swing.JSplitPane();
         controlPanelCommunityAdmin = new javax.swing.JPanel();
         btnCityDirectory = new javax.swing.JButton();
@@ -72,6 +73,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel1.setText("Community Login");
 
         lblCommunityAdminUsername.setText("Username");
@@ -85,43 +87,52 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/images/community admin.gif"))); // NOI18N
+
         javax.swing.GroupLayout communityAdminLoginPanelLayout = new javax.swing.GroupLayout(communityAdminLoginPanel);
         communityAdminLoginPanel.setLayout(communityAdminLoginPanelLayout);
         communityAdminLoginPanelLayout.setHorizontalGroup(
             communityAdminLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(communityAdminLoginPanelLayout.createSequentialGroup()
-                .addGap(203, 203, 203)
-                .addGroup(communityAdminLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
+                .addGroup(communityAdminLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(communityAdminLoginPanelLayout.createSequentialGroup()
+                        .addGap(203, 203, 203)
                         .addGroup(communityAdminLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblCommunityAdminPassword)
-                            .addComponent(lblCommunityAdminUsername))
+                            .addComponent(lblCommunityAdminUsername)
+                            .addComponent(lblCommunityAdminPassword))
                         .addGap(26, 26, 26)
                         .addGroup(communityAdminLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtCommunityAdminUsername)
                             .addComponent(txtCommunityAdminPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, communityAdminLoginPanelLayout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(btnCommunityAdminLogin)))
-                .addContainerGap(451, Short.MAX_VALUE))
+                    .addGroup(communityAdminLoginPanelLayout.createSequentialGroup()
+                        .addGap(239, 239, 239)
+                        .addComponent(btnCommunityAdminLogin))
+                    .addGroup(communityAdminLoginPanelLayout.createSequentialGroup()
+                        .addGap(233, 233, 233)
+                        .addComponent(jLabel1))
+                    .addGroup(communityAdminLoginPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 872, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         communityAdminLoginPanelLayout.setVerticalGroup(
             communityAdminLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(communityAdminLoginPanelLayout.createSequentialGroup()
-                .addGap(65, 65, 65)
+                .addGap(41, 41, 41)
                 .addComponent(jLabel1)
-                .addGap(70, 70, 70)
+                .addGap(39, 39, 39)
                 .addGroup(communityAdminLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCommunityAdminUsername)
                     .addComponent(txtCommunityAdminUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
+                .addGap(18, 18, 18)
                 .addGroup(communityAdminLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCommunityAdminPassword)
                     .addComponent(txtCommunityAdminPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(61, 61, 61)
+                .addGap(28, 28, 28)
                 .addComponent(btnCommunityAdminLogin)
-                .addContainerGap(413, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 484, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         add(communityAdminLoginPanel, "communityAdminLoginPanel");
@@ -160,7 +171,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
                 .addComponent(btnCommunityDirectory)
                 .addGap(73, 73, 73)
                 .addComponent(btnHouseDirectory)
-                .addContainerGap(241, Short.MAX_VALUE))
+                .addContainerGap(218, Short.MAX_VALUE))
         );
         controlPanelCommunityAdminLayout.setVerticalGroup(
             controlPanelCommunityAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -221,7 +232,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
         viewPanelCityDirectory.setLayout(viewPanelCityDirectoryLayout);
         viewPanelCityDirectoryLayout.setHorizontalGroup(
             viewPanelCityDirectoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 823, Short.MAX_VALUE)
+            .addGap(0, 783, Short.MAX_VALUE)
         );
         viewPanelCityDirectoryLayout.setVerticalGroup(
             viewPanelCityDirectoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,7 +300,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
         ViewPanelCommunityDirectory.setLayout(ViewPanelCommunityDirectoryLayout);
         ViewPanelCommunityDirectoryLayout.setHorizontalGroup(
             ViewPanelCommunityDirectoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 782, Short.MAX_VALUE)
+            .addGap(0, 742, Short.MAX_VALUE)
         );
         ViewPanelCommunityDirectoryLayout.setVerticalGroup(
             ViewPanelCommunityDirectoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -369,7 +380,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
             .addGroup(houseDirectoryPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(splitPaneHouseDirectory, javax.swing.GroupLayout.PREFERRED_SIZE, 881, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         houseDirectoryPanelLayout.setVerticalGroup(
             houseDirectoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -472,6 +483,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
     private javax.swing.JPanel controlPanelHouseDirectory;
     private javax.swing.JPanel houseDirectoryPanel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JSplitPane jSplitPaneCommunityAdmin;
     private javax.swing.JLabel lblCommunityAdminPassword;
     private javax.swing.JLabel lblCommunityAdminUsername;

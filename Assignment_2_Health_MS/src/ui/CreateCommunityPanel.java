@@ -42,6 +42,7 @@ public class CreateCommunityPanel extends javax.swing.JPanel {
         txtCommunityName = new javax.swing.JTextField();
         jComboBoxCities = new javax.swing.JComboBox<>();
 
+        btnSaveCommunity.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnSaveCommunity.setText("Save Community");
         btnSaveCommunity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,6 +50,7 @@ public class CreateCommunityPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel2.setText("Community Directory");
 
         lblCommunityName.setText("Community Name");
@@ -71,18 +73,19 @@ public class CreateCommunityPanel extends javax.swing.JPanel {
                             .addComponent(txtCommunityName, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
                             .addComponent(jComboBoxCities, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(357, 357, 357)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnSaveCommunity)
-                            .addComponent(jLabel2))))
+                        .addGap(299, 299, 299)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(303, 303, 303)
+                        .addComponent(btnSaveCommunity)))
                 .addContainerGap(332, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(106, 106, 106)
+                .addGap(135, 135, 135)
                 .addComponent(jLabel2)
-                .addGap(81, 81, 81)
+                .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCommunityName)
                     .addComponent(txtCommunityName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -90,9 +93,9 @@ public class CreateCommunityPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCommunityCity)
                     .addComponent(jComboBoxCities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(66, 66, 66)
+                .addGap(54, 54, 54)
                 .addComponent(btnSaveCommunity)
-                .addContainerGap(353, Short.MAX_VALUE))
+                .addContainerGap(357, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

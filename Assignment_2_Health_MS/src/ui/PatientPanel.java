@@ -39,13 +39,6 @@ public class PatientPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        PatientLoginPanel = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        txtPatientUsername = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        txtPatientPassword = new javax.swing.JPasswordField();
-        btnDoctorLogin = new javax.swing.JButton();
         jSplitPanePatientPanel = new javax.swing.JSplitPane();
         controlPanelPatientHome = new javax.swing.JPanel();
         btnCheckDoctors = new javax.swing.JButton();
@@ -53,87 +46,36 @@ public class PatientPanel extends javax.swing.JPanel {
         btnCheckDetails = new javax.swing.JButton();
         btnBookAppointment = new javax.swing.JButton();
         viewPanelPatientHome = new javax.swing.JPanel();
+        PatientLoginPanel = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtPatientUsername = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtPatientPassword = new javax.swing.JPasswordField();
+        btnDoctorLogin = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new java.awt.CardLayout());
 
-        jLabel2.setText("Patient Login");
-
-        jLabel3.setText("Username");
-
-        txtPatientUsername.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPatientUsernameActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("Password");
-
-        btnDoctorLogin.setText("Login");
-        btnDoctorLogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDoctorLoginActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout PatientLoginPanelLayout = new javax.swing.GroupLayout(PatientLoginPanel);
-        PatientLoginPanel.setLayout(PatientLoginPanelLayout);
-        PatientLoginPanelLayout.setHorizontalGroup(
-            PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                .addGap(291, 291, 291)
-                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addComponent(jLabel2))
-                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                        .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4))
-                        .addGap(40, 40, 40)
-                        .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtPatientUsername)
-                            .addComponent(txtPatientPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(btnDoctorLogin)))
-                .addContainerGap(333, Short.MAX_VALUE))
-        );
-        PatientLoginPanelLayout.setVerticalGroup(
-            PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(jLabel2)
-                .addGap(74, 74, 74)
-                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(txtPatientUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4)
-                    .addComponent(txtPatientPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(54, 54, 54)
-                .addComponent(btnDoctorLogin)
-                .addContainerGap(371, Short.MAX_VALUE))
-        );
-
-        add(PatientLoginPanel, "PatientLoginPanel");
-
         jSplitPanePatientPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        btnCheckDoctors.setText("Check Doctors");
+        btnCheckDoctors.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        btnCheckDoctors.setText("Check for Doctors");
         btnCheckDoctors.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCheckDoctorsActionPerformed(evt);
             }
         });
 
-        btncheckEncounters.setText("Check Encounter");
+        btncheckEncounters.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        btncheckEncounters.setText("Check Encounters");
         btncheckEncounters.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncheckEncountersActionPerformed(evt);
             }
         });
 
+        btnCheckDetails.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnCheckDetails.setText("Check Personal Details");
         btnCheckDetails.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,7 +83,8 @@ public class PatientPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBookAppointment.setText("Book Appointment");
+        btnBookAppointment.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        btnBookAppointment.setText("Book an Appointment");
         btnBookAppointment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBookAppointmentActionPerformed(evt);
@@ -161,7 +104,7 @@ public class PatientPanel extends javax.swing.JPanel {
                 .addComponent(btnCheckDetails)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnBookAppointment)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         controlPanelPatientHomeLayout.setVerticalGroup(
             controlPanelPatientHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,7 +115,7 @@ public class PatientPanel extends javax.swing.JPanel {
                     .addComponent(btncheckEncounters)
                     .addComponent(btnCheckDetails)
                     .addComponent(btnBookAppointment))
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         jSplitPanePatientPanel.setTopComponent(controlPanelPatientHome);
@@ -185,12 +128,81 @@ public class PatientPanel extends javax.swing.JPanel {
         );
         viewPanelPatientHomeLayout.setVerticalGroup(
             viewPanelPatientHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 614, Short.MAX_VALUE)
+            .addGap(0, 618, Short.MAX_VALUE)
         );
 
         jSplitPanePatientPanel.setRightComponent(viewPanelPatientHome);
 
         add(jSplitPanePatientPanel, "jSplitPanePatientPanel");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel2.setText("Patient Login");
+
+        jLabel3.setText("Username");
+
+        txtPatientUsername.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPatientUsernameActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setText("Password");
+
+        btnDoctorLogin.setText("Login");
+        btnDoctorLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDoctorLoginActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/images/Patient login.gif"))); // NOI18N
+
+        javax.swing.GroupLayout PatientLoginPanelLayout = new javax.swing.GroupLayout(PatientLoginPanel);
+        PatientLoginPanel.setLayout(PatientLoginPanelLayout);
+        PatientLoginPanelLayout.setHorizontalGroup(
+            PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PatientLoginPanelLayout.createSequentialGroup()
+                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
+                        .addGap(254, 254, 254)
+                        .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3))
+                        .addGap(77, 77, 77)
+                        .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtPatientPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPatientUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
+                        .addGap(318, 318, 318)
+                        .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(btnDoctorLogin)))
+                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
+                        .addGap(147, 147, 147)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(171, Short.MAX_VALUE))
+        );
+        PatientLoginPanelLayout.setVerticalGroup(
+            PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PatientLoginPanelLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel2)
+                .addGap(45, 45, 45)
+                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtPatientUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtPatientPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(42, 42, 42)
+                .addComponent(btnDoctorLogin)
+                .addGap(37, 37, 37)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 362, Short.MAX_VALUE)
+                .addGap(81, 81, 81))
+        );
+
+        add(PatientLoginPanel, "PatientLoginPanel");
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDoctorLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDoctorLoginActionPerformed
@@ -250,6 +262,7 @@ public class PatientPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnDoctorLogin;
     private javax.swing.JButton btncheckEncounters;
     private javax.swing.JPanel controlPanelPatientHome;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

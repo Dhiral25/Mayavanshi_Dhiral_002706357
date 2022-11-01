@@ -36,6 +36,7 @@ public class DoctorPanelHome extends javax.swing.JPanel {
 
         jSplitPaneDoctorPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
+        btnCreateEncounter.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnCreateEncounter.setText("Create Encounter");
         btnCreateEncounter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -43,10 +44,13 @@ public class DoctorPanelHome extends javax.swing.JPanel {
             }
         });
 
-        btnViewEncounter.setText("View Encounter");
+        btnViewEncounter.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        btnViewEncounter.setText("View Encounters");
 
+        jButton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jButton1.setText("Create Vital Signs");
 
+        jButton2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jButton2.setText("View Vital Signs");
 
         javax.swing.GroupLayout controlPanelDoctorLayout = new javax.swing.GroupLayout(controlPanelDoctor);
@@ -62,7 +66,7 @@ public class DoctorPanelHome extends javax.swing.JPanel {
                 .addComponent(jButton1)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addContainerGap(201, Short.MAX_VALUE))
+                .addContainerGap(142, Short.MAX_VALUE))
         );
         controlPanelDoctorLayout.setVerticalGroup(
             controlPanelDoctorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -73,7 +77,7 @@ public class DoctorPanelHome extends javax.swing.JPanel {
                     .addComponent(btnViewEncounter)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         jSplitPaneDoctorPanel.setLeftComponent(controlPanelDoctor);

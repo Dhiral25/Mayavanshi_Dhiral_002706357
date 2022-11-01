@@ -51,7 +51,8 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
         lblCommunityId = new javax.swing.JLabel();
         txtCommunityId = new javax.swing.JTextField();
 
-        jLabel1.setText("View Community");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jLabel1.setText("View Community Records\n");
 
         tblCommunities.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -66,6 +67,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblCommunities);
 
+        btnViewCommunity.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnViewCommunity.setText("View Community");
         btnViewCommunity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +75,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
             }
         });
 
+        btnUpdateCommunity.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnUpdateCommunity.setText("Update Community");
         btnUpdateCommunity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +83,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
             }
         });
 
+        btnSaveCommunity.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnSaveCommunity.setText("Save Community");
         btnSaveCommunity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,20 +117,18 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 813, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(216, 216, 216)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblCommunityName)
-                                    .addComponent(lblCommunityCity)
-                                    .addComponent(lblCommunityId, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(65, 65, 65)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtCommunityName)
-                                    .addComponent(jComboBoxCities, 0, 150, Short.MAX_VALUE)
-                                    .addComponent(txtCommunityId)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(137, 137, 137)
-                                .addComponent(btnSaveCommunity)))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblCommunityName)
+                            .addComponent(lblCommunityCity)
+                            .addComponent(lblCommunityId, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(65, 65, 65)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtCommunityName)
+                            .addComponent(jComboBoxCities, 0, 150, Short.MAX_VALUE)
+                            .addComponent(txtCommunityId)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(296, 296, 296)
+                        .addComponent(btnSaveCommunity)))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -141,9 +143,9 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
                     .addComponent(btnViewCommunity)
                     .addComponent(btnUpdateCommunity))
                 .addGap(54, 54, 54)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblCommunityId)
-                    .addComponent(txtCommunityId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCommunityId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCommunityId))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCommunityName)
@@ -152,9 +154,9 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCommunityCity)
                     .addComponent(jComboBoxCities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(66, 66, 66)
+                .addGap(42, 42, 42)
                 .addComponent(btnSaveCommunity)
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(162, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

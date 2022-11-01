@@ -47,6 +47,7 @@ public class DoctorPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         txtDoctorPassword = new javax.swing.JPasswordField();
         btnDoctorLogin = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
         jSplitPaneDoctorPanel = new javax.swing.JSplitPane();
         controlPanelDoctor = new javax.swing.JPanel();
         btnCreateEncounter = new javax.swing.JButton();
@@ -57,6 +58,7 @@ public class DoctorPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel2.setText("Doctor Login");
 
         jLabel3.setText("Username");
@@ -69,12 +71,15 @@ public class DoctorPanel extends javax.swing.JPanel {
             }
         });
 
+        btnDoctorLogin.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnDoctorLogin.setText("Login");
         btnDoctorLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDoctorLoginActionPerformed(evt);
             }
         });
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/images/doctorlogin.gif"))); // NOI18N
 
         javax.swing.GroupLayout jPanelDoctorLoginPanelLayout = new javax.swing.GroupLayout(jPanelDoctorLoginPanel);
         jPanelDoctorLoginPanel.setLayout(jPanelDoctorLoginPanelLayout);
@@ -84,44 +89,53 @@ public class DoctorPanel extends javax.swing.JPanel {
                 .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
                         .addGap(366, 366, 366)
-                        .addComponent(jLabel1))
+                        .addComponent(jLabel1)
+                        .addGap(0, 510, Short.MAX_VALUE))
                     .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
-                        .addGap(352, 352, 352)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
-                        .addGap(274, 274, 274)
                         .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
+                                .addGap(33, 33, 33)
+                                .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel4))
-                                .addGap(40, 40, 40)
-                                .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtDoctorUsername)
-                                    .addComponent(txtDoctorPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(txtDoctorPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtDoctorUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
-                                .addGap(59, 59, 59)
-                                .addComponent(btnDoctorLogin)))))
-                .addContainerGap(359, Short.MAX_VALUE))
+                                .addGap(63, 63, 63)
+                                .addComponent(btnDoctorLogin))
+                            .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
+                                .addGap(64, 64, 64)
+                                .addComponent(jLabel2)))
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanelDoctorLoginPanelLayout.setVerticalGroup(
             jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
                 .addGap(55, 55, 55)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addGap(74, 74, 74)
-                .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(txtDoctorUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4)
-                    .addComponent(txtDoctorPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(54, 54, 54)
-                .addComponent(btnDoctorLogin)
-                .addContainerGap(411, Short.MAX_VALUE))
+                .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel2)
+                        .addGap(52, 52, 52)
+                        .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtDoctorUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanelDoctorLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(txtDoctorPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)
+                        .addComponent(btnDoctorLogin)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelDoctorLoginPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 6, Short.MAX_VALUE))))
         );
 
         add(jPanelDoctorLoginPanel, "jPanelDoctorLoginPanel");
@@ -193,7 +207,7 @@ public class DoctorPanel extends javax.swing.JPanel {
         );
         viewPanelDoctorLayout.setVerticalGroup(
             viewPanelDoctorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 615, Short.MAX_VALUE)
+            .addGap(0, 621, Short.MAX_VALUE)
         );
 
         jSplitPaneDoctorPanel.setRightComponent(viewPanelDoctor);
@@ -261,6 +275,7 @@ public class DoctorPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanelDoctorLoginPanel;
     private javax.swing.JSplitPane jSplitPaneDoctorPanel;
     private javax.swing.JPasswordField txtDoctorPassword;

@@ -35,25 +35,21 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="lblCommunityName" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblCommunityCity" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblCommunityId" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtCommunityName" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBoxCities" alignment="0" pref="150" max="32767" attributes="0"/>
-                                  <Component id="txtCommunityId" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
-                              <Component id="btnSaveCommunity" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lblCommunityName" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCommunityCity" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCommunityId" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtCommunityName" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jComboBoxCities" alignment="0" pref="150" max="32767" attributes="0"/>
+                          <Component id="txtCommunityId" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="296" max="-2" attributes="0"/>
+                      <Component id="btnSaveCommunity" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="23" max="32767" attributes="0"/>
@@ -73,9 +69,9 @@
                   <Component id="btnUpdateCommunity" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="lblCommunityId" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtCommunityId" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtCommunityId" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCommunityId" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -87,9 +83,9 @@
                   <Component id="lblCommunityCity" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jComboBoxCities" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Component id="btnSaveCommunity" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="150" max="32767" attributes="0"/>
+              <EmptySpace pref="162" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -97,7 +93,10 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="View Community"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="3"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="View Community Records&#xa;"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -144,6 +143,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnViewCommunity">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="View Community"/>
       </Properties>
       <Events>
@@ -152,6 +154,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnUpdateCommunity">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Update Community"/>
       </Properties>
       <Events>
@@ -160,6 +165,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnSaveCommunity">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Save Community"/>
       </Properties>
       <Events>

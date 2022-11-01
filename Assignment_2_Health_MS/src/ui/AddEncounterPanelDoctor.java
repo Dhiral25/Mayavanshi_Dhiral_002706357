@@ -48,8 +48,10 @@ public class AddEncounterPanelDoctor extends javax.swing.JPanel {
         jComboBoxPatient = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel1.setText("Add Encounter");
 
+        btnAddEncounter.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,9 +70,6 @@ public class AddEncounterPanelDoctor extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(345, 345, 345)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(110, 110, 110)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel4)
@@ -80,16 +79,19 @@ public class AddEncounterPanelDoctor extends javax.swing.JPanel {
                             .addComponent(jComboBoxPatient, 0, 293, Short.MAX_VALUE)
                             .addComponent(txtEncounterDate)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(216, 216, 216)
+                        .addGap(187, 187, 187)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(184, 184, 184)
                         .addComponent(btnAddEncounter)))
                 .addContainerGap(306, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+                .addGap(114, 114, 114)
                 .addComponent(jLabel1)
-                .addGap(126, 126, 126)
+                .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -98,9 +100,9 @@ public class AddEncounterPanelDoctor extends javax.swing.JPanel {
                         .addGap(59, 59, 59)
                         .addComponent(jLabel4))
                     .addComponent(txtEncounterDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(84, 84, 84)
+                .addGap(47, 47, 47)
                 .addComponent(btnAddEncounter)
-                .addContainerGap(307, Short.MAX_VALUE))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
