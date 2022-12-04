@@ -1,3 +1,5 @@
+"Covid-19 Cases Management & Administration" 
+
 Create a Covid management system where 
 Admin creates roles (12) for Doctor, Customer, Delivery Man, Lab Assistant, Logistics Associate, Patient Associate, Patient, Student, Swab Collector, Student, Restaurant. 
 Create Patient Appointment Directory and maintain details such as appointment date, time, status and complaince status.
