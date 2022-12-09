@@ -7,7 +7,7 @@ import Business.Role.CovidCareRole;
 
 /**
  *
- * @author rrheg
+ * @author vikas
  */
 public class ConfigureASystem {
     
