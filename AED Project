@@ -1,5 +1,18 @@
-"Covid-19 Cases Management & Administration" 
+"AtYourService" 
 
-Create a Covid management system where 
-Admin creates roles (12) for Doctor, Customer, Delivery Man, Lab Assistant, Logistics Associate, Patient Associate, Patient, Student, Swab Collector, Student, Restaurant. 
-Create Patient Appointment Directory and maintain details such as appointment date, time, status and complaince status.
+Customers have to visit multiple sites in order to get different types of services. In order to save customer from this hassle, AtYourService application provides the customers to access multiple services in a single platform. From booking maid for house cleaning to booking cab before stepping out of house, this application is a full package.
+This project has 7 enterprises, 6 services and 4 roles.
+
+Roles: 
+System Admin, Customer, Deliveryman, Employee, GroceryManager, HospitalManager, HotelManager, Cab, MaidManager, Orders, UserAccount, WorkQueue, Doctor.
+
+Scope:
+     Admin:
+-	Admin logins and create networks.
+-	Admin also has accessibility to create enterprises (Customer, Delivery, Grocery, Hotel, Doctor, HouseMaid, Cab).
+-	Admin can anytime update and delete these details stores in database.
+      Customer:
+-	Customer will login and create his /her personal account to access and manage the services. If the customer is new, he/she will sign up and add details.
+-	After successful login, customer can see 6 services provided: Cab Booking, Grocery Shopping, Maid Service, Doctor service, Restaurant System.
+-	Once the customers select his service, he adds the service in the cart which he can check-out at the end.
+-	The customer can access multiple services of his choice.
