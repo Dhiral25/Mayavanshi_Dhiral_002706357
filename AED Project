@@ -15,4 +15,4 @@ Scope:
 -	Customer will login and create his /her personal account to access and manage the services. If the customer is new, he/she will sign up and add details.
 -	After successful login, customer can see 6 services provided: Cab Booking, Grocery Shopping, Maid Service, Doctor service, Restaurant System.
 -	Once the customers select his service, he adds the service in the cart which he can check-out at the end.
--	The customer can access multiple services of his choice.
+-	The customer can access multiple services of his choice..
