@@ -177,7 +177,6 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         LegalserviceTable = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
         itemText = new javax.swing.JTextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel1 = new javax.swing.JLabel();
         AddButton = new javax.swing.JButton();
         Backbutton = new javax.swing.JButton();
@@ -242,7 +241,6 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
 
         itemText.setForeground(new java.awt.Color(72, 72, 72));
         add(itemText, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 332, 145, -1));
-        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 417, 145, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -421,7 +419,6 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         removeItemText.setForeground(new java.awt.Color(72, 72, 72));
         add(removeItemText, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 300, 190, -1));
 
-        removeButton.setBackground(new java.awt.Color(255, 255, 255));
         removeButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         removeButton.setText("Remove");
         removeButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -432,7 +429,6 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         });
         add(removeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 349, 100, 40));
 
-        clearButton.setBackground(new java.awt.Color(255, 255, 255));
         clearButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         clearButton.setText("Clear ");
         clearButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -614,7 +610,6 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
     private javax.swing.JButton clearButton;
     private javax.swing.JTextField itemText;
     private javax.swing.JTextField itemText1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
