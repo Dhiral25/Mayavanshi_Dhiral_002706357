@@ -1,38 +1,32 @@
 /*
-<<<<<<< HEAD
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
-=======
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
->>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
  */
-package Business.GroceryManager;
+package Business.DeliveryMan;
 
+import Business.Orders.HotelDirectory;
+import Business.Orders.OrderDirectory;
 import Business.UserAccount.UserAccount;
-<<<<<<< HEAD
+import java.util.ArrayList;
 
 /**
  *
- * @author dhiral
-=======
-/**
- *
- * @author DhiralM
->>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
+ * @author vikas
  */
-public class GroceryManager {
+public class DeliveryMan {
     private String name;
     private int id;
     private static int count = 1;
     private String managerName;
     private String address;
     private String phone;
-    private UserAccount accountDetails;
+    private boolean available;
+    private UserAccount accountDetails = new UserAccount();
+    private ArrayList<OrderDirectory> orderList;
+    private ArrayList<HotelDirectory> orderLists;
     private String Network;
 
-<<<<<<< HEAD
     public String getNetwork() {
         return Network;
     }
@@ -40,7 +34,33 @@ public class GroceryManager {
     public void setNetwork(String Network) {
         this.Network = Network;
     }
-    
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+   
+
+    public ArrayList<HotelDirectory> getOrderLists() {
+        return orderLists;
+    }
+
+    public void setOrderLists(ArrayList<HotelDirectory> orderLists) {
+        this.orderLists = orderLists;
+    }
+
+    public ArrayList<OrderDirectory> getOrderList() {
+        return orderList;
+    }
+
+    public void setOrderList(ArrayList<OrderDirectory> orderList) {
+        this.orderList = orderList;
+    }
+
     public UserAccount getAccountDetails() {
         return accountDetails;
     }
@@ -73,13 +93,13 @@ public class GroceryManager {
         this.accountDetails = accountDetails;
     }
     
-    public GroceryManager() {
+    public DeliveryMan() {
         id = count;
         count++;
+        orderList = new ArrayList<OrderDirectory>();
+        orderLists = new ArrayList<HotelDirectory>();
     }
     
-=======
->>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
     public String getName() {
         return name;
     }
@@ -101,51 +121,7 @@ public class GroceryManager {
     }
 
     public static void setCount(int count) {
-        GroceryManager.count = count;
-    }
-<<<<<<< HEAD
-=======
-
-    public String getManagerName() {
-        return managerName;
-    }
-
-    public void setManagerName(String managerName) {
-        this.managerName = managerName;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public UserAccount getAccountDetails() {
-        return accountDetails;
-    }
-
-    public void setAccountDetails(UserAccount accountDetails) {
-        this.accountDetails = accountDetails;
-    }
-
-    public String getNetwork() {
-        return Network;
-    }
-
-    public void setNetwork(String Network) {
-        this.Network = Network;
+        DeliveryMan.count = count;
     }
     
-    
->>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
 }
