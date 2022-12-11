@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author shikha
+ * @author vikas
  */
 public class DeliveryMan {
     private String name;
