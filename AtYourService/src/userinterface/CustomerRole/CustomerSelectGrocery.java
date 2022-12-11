@@ -189,7 +189,7 @@ public class CustomerSelectGrocery extends javax.swing.JPanel {
         title.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        jPanel1.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
         cartTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         cartTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -237,7 +237,8 @@ public class CustomerSelectGrocery extends javax.swing.JPanel {
             }
         });
 
-        clearButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        clearButton.setBackground(new java.awt.Color(204, 255, 0));
+        clearButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         clearButton.setText("Clear ");
         clearButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         clearButton.addActionListener(new java.awt.event.ActionListener() {
@@ -287,7 +288,7 @@ public class CustomerSelectGrocery extends javax.swing.JPanel {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setForeground(new java.awt.Color(0, 244, 144));
 
         menuTable.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -390,14 +391,14 @@ public class CustomerSelectGrocery extends javax.swing.JPanel {
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel3.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Wanna do a quick checkout? \nClick the button Below");
 
-        placeButton.setBackground(new java.awt.Color(240, 248, 255));
-        placeButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        placeButton.setBackground(new java.awt.Color(204, 255, 0));
+        placeButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         placeButton.setText("Place Order");
         placeButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         placeButton.addActionListener(new java.awt.event.ActionListener() {
