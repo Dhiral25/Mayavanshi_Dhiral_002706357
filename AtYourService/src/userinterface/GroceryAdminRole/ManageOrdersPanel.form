@@ -54,9 +54,15 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Component id="jLabel4" min="-2" pref="485" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
+=======
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" pref="485" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
@@ -126,15 +132,26 @@
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+<<<<<<< HEAD
+=======
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
                       <EmptySpace pref="23" max="32767" attributes="0"/>
                       <Component id="jLabel3" min="-2" pref="466" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   </Group>
+<<<<<<< HEAD
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+=======
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
               </Group>
           </Group>
       </Group>
@@ -178,15 +195,24 @@
     <Component class="javax.swing.JButton" name="acceptBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
+          <Color blue="ff" green="f8" red="f0" type="rgb"/>
+=======
           <Color blue="0" green="ff" red="cc" type="rgb"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Accept"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+<<<<<<< HEAD
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder/>
+=======
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder roundedCorners="true"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Border>
         </Property>
       </Properties>
@@ -197,15 +223,24 @@
     <Component class="javax.swing.JButton" name="rejectBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
+          <Color blue="ff" green="f8" red="f0" type="rgb"/>
+=======
           <Color blue="0" green="ff" red="cc" type="rgb"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Reject"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+<<<<<<< HEAD
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder/>
+=======
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder roundedCorners="true"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Border>
         </Property>
       </Properties>
@@ -269,11 +304,14 @@
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="0"/>
         </Property>
+<<<<<<< HEAD
+=======
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder roundedCorners="true"/>
           </Border>
         </Property>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="assignComboActionPerformed"/>
@@ -301,15 +339,24 @@
     <Component class="javax.swing.JButton" name="Backbutton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
+          <Color blue="ff" green="f8" red="f0" type="rgb"/>
+=======
           <Color blue="0" green="ff" red="cc" type="rgb"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="13" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Back"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+<<<<<<< HEAD
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder/>
+=======
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder roundedCorners="true"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Border>
         </Property>
       </Properties>

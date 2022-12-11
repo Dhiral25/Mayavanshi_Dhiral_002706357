@@ -2,30 +2,31 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Business.MaidManager;
+package Business.Legal;
 
 /**
  *
-<<<<<<< HEAD
- * @author yashjain
- */
-import Business.Orders.Maid1Directory;
-=======
  * @author vikas
  */
-import Business.Orders.MaidDirectory;
->>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
-import Business.Orders.MaidOrder;
+import Business.Orders.LegalOrder;
+import Business.Orders.LegalDirectory;
 import Business.UserAccount.UserAccount;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MaidManager {
+public class Legal {
     private String name;
     private int id;
     private static int count = 1;
     private String managerName;
-    private String gender;
+    private String address;
+    private HashMap<String, String> menus;
+    private String phone;
+    private String Email;
+    private UserAccount accountDetails = new UserAccount();
+    private ArrayList<LegalOrder> orderList;
+    private ArrayList<LegalDirectory> orderDirectoryList;
+    private HashMap<String, ArrayList<LegalOrder>> orders;
     private String Network;
 
     public String getNetwork() {
@@ -36,62 +37,55 @@ public class MaidManager {
         this.Network = Network;
     }
 
-    public String getGender() {
-        return gender;
+    public HashMap<String, String> getMenus() {
+        return menus;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-    private String address;
-    private String phone;
-    private String available;
-    private UserAccount accountDetails;
-    private HashMap<String, String> menu;
-    private ArrayList<MaidOrder> orderList;
-    private HashMap<String, ArrayList<MaidOrder>> orders;
-    private ArrayList<Maid1Directory> orderDirectoryList;
-
-    public String getAvailable() {
-        return available;
+    public void setMenus(HashMap<String, String> menus) {
+        this.menus = menus;
     }
 
-    public void setAvailable(String available) {
-        this.available = available;
-    }
-
-    public HashMap<String, String> getMenu() {
-        return menu;
-    }
-
-    public void setMenu(HashMap<String, String> menu) {
-        this.menu = menu;
-    }
-
-    public ArrayList<MaidOrder> getOrderList() {
-        return orderList;
-    }
-
-    public void setOrderList(ArrayList<MaidOrder> orderList) {
-        this.orderList = orderList;
-    }
-
-    public HashMap<String, ArrayList<MaidOrder>> getOrders() {
+    public HashMap<String, ArrayList<LegalOrder>> getOrders() {
         return orders;
     }
 
-    public void setOrders(HashMap<String, ArrayList<MaidOrder>> orders) {
+    public void setOrders(HashMap<String, ArrayList<LegalOrder>> orders) {
         this.orders = orders;
     }
 
-    public ArrayList<Maid1Directory> getOrderDirectoryList() {
+    
+    
+    public HashMap<String, String> getMenu() {
+        return menus;
+    }
+
+    public void setMenu(HashMap<String, String> menus) {
+        this.menus = menus;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+
+    public ArrayList<LegalDirectory> getOrderDirectoryList() {
         return orderDirectoryList;
     }
 
-    public void setOrderDirectoryList(ArrayList<Maid1Directory> orderDirectoryList) {
+    public void setOrderDirectoryList(ArrayList<LegalDirectory> orderDirectoryList) {
         this.orderDirectoryList = orderDirectoryList;
     }
+    
+    public ArrayList<LegalOrder> getOrderList() {
+        return orderList;
+    }
 
+    public void setOrderList(ArrayList<LegalOrder> orderList) {
+        this.orderList = orderList;
+    }
     
     public UserAccount getAccountDetails() {
         return accountDetails;
@@ -125,15 +119,18 @@ public class MaidManager {
         this.accountDetails = accountDetails;
     }
     
-    public MaidManager() {
+    public Legal() {
         id = count;
         count++;
-        menu = new HashMap<String, String>();
-        orderList = new ArrayList<MaidOrder>();
-        orders = new HashMap<String, ArrayList<MaidOrder>>();
-        orderDirectoryList = new ArrayList<Maid1Directory>();
+        menus = new HashMap<String, String>();
+        orderList = new ArrayList<LegalOrder>();
+        orderDirectoryList = new ArrayList<LegalDirectory>();
     }
     
+    public void setMenuItem(String name, String value) {
+        menus.put(name, value);
+    }
+
     public String getName() {
         return name;
     }
@@ -155,10 +152,7 @@ public class MaidManager {
     }
 
     public static void setCount(int count) {
-        MaidManager.count = count;
+        Legal.count = count;
     }
+    
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe

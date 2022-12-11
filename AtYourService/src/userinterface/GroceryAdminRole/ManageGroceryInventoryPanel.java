@@ -19,7 +19,15 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @author shikha
+=======
+ * @author yashj
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
+=======
  * @author vikas
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
  */
 public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
 
@@ -117,10 +125,17 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         menuTable.setRowHeight(25);
         jScrollPane1.setViewportView(menuTable);
 
+<<<<<<< HEAD
+        btnBack.setBackground(new java.awt.Color(240, 248, 255));
+        btnBack.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+=======
         btnBack.setBackground(new java.awt.Color(204, 255, 0));
         btnBack.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
         btnBack.setText("Back");
         btnBack.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -132,14 +147,20 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         title.setForeground(new java.awt.Color(0, 83, 170));
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+<<<<<<< HEAD
+=======
         AddItemPanel.setBackground(new java.awt.Color(0, 204, 204));
 
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         AddItemLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         AddItemLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         AddItemLabel.setText("Add Item");
 
         itemText.setForeground(new java.awt.Color(72, 72, 72));
+<<<<<<< HEAD
+=======
         itemText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         itemText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 itemTextActionPerformed(evt);
@@ -147,7 +168,10 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         });
 
         priceText.setForeground(new java.awt.Color(72, 72, 72));
+<<<<<<< HEAD
+=======
         priceText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
 
         AddItemNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         AddItemNameLabel.setForeground(new java.awt.Color(72, 72, 72));
@@ -159,10 +183,17 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         AddItemPriceLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         AddItemPriceLabel.setText("Price");
 
+<<<<<<< HEAD
+        addButton.setBackground(new java.awt.Color(240, 248, 255));
+        addButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        addButton.setText("Add");
+        addButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+=======
         addButton.setBackground(new java.awt.Color(204, 255, 0));
         addButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
         addButton.setText("Add");
         addButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         addButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addButtonActionPerformed(evt);
@@ -211,8 +242,11 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
                 .addContainerGap(67, Short.MAX_VALUE))
         );
 
+<<<<<<< HEAD
+=======
         UpdateItemPanel.setBackground(new java.awt.Color(0, 204, 204));
 
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Update / Delete an Item");
@@ -224,7 +258,10 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
 
         itemsCombo.setForeground(new java.awt.Color(72, 72, 72));
         itemsCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--None" }));
+<<<<<<< HEAD
+=======
         itemsCombo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         itemsCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 itemsComboActionPerformed(evt);
@@ -237,7 +274,10 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         ItemPanel.setText("Item");
 
         updateItemText.setForeground(new java.awt.Color(72, 72, 72));
+<<<<<<< HEAD
+=======
         updateItemText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         updateItemText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 updateItemTextActionPerformed(evt);
@@ -250,22 +290,37 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         PriceLabel.setText("Price");
 
         updatePriceText.setForeground(new java.awt.Color(72, 72, 72));
+<<<<<<< HEAD
+
+        updateButton.setBackground(new java.awt.Color(240, 248, 255));
+        updateButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        updateButton.setText("Update");
+        updateButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+=======
         updatePriceText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         updateButton.setBackground(new java.awt.Color(204, 255, 0));
         updateButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
         updateButton.setText("Update");
         updateButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         updateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 updateButtonActionPerformed(evt);
             }
         });
 
+<<<<<<< HEAD
+        deleteButton.setBackground(new java.awt.Color(240, 248, 255));
+        deleteButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        deleteButton.setText("Delete");
+        deleteButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+=======
         deleteButton.setBackground(new java.awt.Color(204, 255, 0));
         deleteButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
         deleteButton.setText("Delete");
         deleteButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         deleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteButtonActionPerformed(evt);
@@ -387,13 +442,21 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
                         .addComponent(AddItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(69, 69, 69)
                         .addComponent(UpdateItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
+                        .addContainerGap(46, Short.MAX_VALUE))
+=======
                         .addContainerGap(62, Short.MAX_VALUE))
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+<<<<<<< HEAD
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+=======
                         .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
                     .addGroup(layout.createSequentialGroup()
                         .addGap(3, 3, 3)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)

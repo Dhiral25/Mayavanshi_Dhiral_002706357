@@ -79,7 +79,11 @@
                       <Component id="AddItemPanel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                       <Component id="UpdateItemPanel" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
+                      <EmptySpace pref="46" max="32767" attributes="0"/>
+=======
                       <EmptySpace pref="62" max="32767" attributes="0"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
@@ -137,15 +141,24 @@
     <Component class="javax.swing.JButton" name="btnBack">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
+          <Color blue="ff" green="f8" red="f0" type="rgb"/>
+=======
           <Color blue="0" green="ff" red="cc" type="rgb"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="13" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Back"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+<<<<<<< HEAD
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder/>
+=======
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder roundedCorners="true" thickness="2"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Border>
         </Property>
       </Properties>
@@ -168,11 +181,14 @@
       </Properties>
     </Component>
     <Container class="javax.swing.JPanel" name="AddItemPanel">
+<<<<<<< HEAD
+=======
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="0" type="rgb"/>
         </Property>
       </Properties>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
 
       <Layout>
         <DimensionLayout dim="0">
@@ -243,11 +259,14 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="48" green="48" red="48" type="rgb"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
               </Border>
             </Property>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemTextActionPerformed"/>
@@ -258,11 +277,14 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="48" green="48" red="48" type="rgb"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
               </Border>
             </Property>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="AddItemNameLabel">
@@ -292,15 +314,24 @@
         <Component class="javax.swing.JButton" name="addButton">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
+              <Color blue="ff" green="f8" red="f0" type="rgb"/>
+=======
               <Color blue="0" green="ff" red="cc" type="rgb"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="13" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Add"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+<<<<<<< HEAD
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+=======
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder roundedCorners="true" thickness="2"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
               </Border>
             </Property>
           </Properties>
@@ -311,11 +342,14 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="UpdateItemPanel">
+<<<<<<< HEAD
+=======
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="0" type="rgb"/>
         </Property>
       </Properties>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
 
       <Layout>
         <DimensionLayout dim="0">
@@ -424,11 +458,14 @@
                 <StringItem index="0" value="--None"/>
               </StringArray>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
               </Border>
             </Property>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemsComboActionPerformed"/>
@@ -454,11 +491,14 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="48" green="48" red="48" type="rgb"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
               </Border>
             </Property>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateItemTextActionPerformed"/>
@@ -481,25 +521,37 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="48" green="48" red="48" type="rgb"/>
             </Property>
+<<<<<<< HEAD
+=======
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
               </Border>
             </Property>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="updateButton">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
+              <Color blue="ff" green="f8" red="f0" type="rgb"/>
+=======
               <Color blue="0" green="ff" red="cc" type="rgb"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="13" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Update"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+<<<<<<< HEAD
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+=======
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder roundedCorners="true" thickness="2"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
               </Border>
             </Property>
           </Properties>
@@ -510,15 +562,24 @@
         <Component class="javax.swing.JButton" name="deleteButton">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
+              <Color blue="ff" green="f8" red="f0" type="rgb"/>
+=======
               <Color blue="0" green="ff" red="cc" type="rgb"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="13" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Delete"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+<<<<<<< HEAD
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+=======
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder roundedCorners="true" thickness="2"/>
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
               </Border>
             </Property>
           </Properties>
