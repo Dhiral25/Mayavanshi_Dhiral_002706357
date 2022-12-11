@@ -12,7 +12,11 @@ import java.nio.file.Paths;
 /**
  *
  * @author vikas
+<<<<<<< HEAD
+ 
+=======
  * 
+>>>>>>> 4617de08d74bcb5873d69b77fbb0839a91d1e1a0
  */
 public class DB4OUtil {
 
