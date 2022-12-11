@@ -21,7 +21,11 @@ import userinterface.GroceryAdminRole.ManageOrdersPanel;
 
 /**
  *
+<<<<<<< HEAD
  * @author shikha
+=======
+ * @author DhiralM
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
  */
 public class CustomerAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -116,7 +120,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         birdiemessage = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+<<<<<<< HEAD
         title = new javax.swing.JLabel();
+=======
+        jLabel6 = new javax.swing.JLabel();
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -124,9 +132,17 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jSplitPane1.setDividerLocation(200);
         jSplitPane1.setDividerSize(10);
 
+<<<<<<< HEAD
         jPanel1.setBackground(new java.awt.Color(240, 248, 255));
         jPanel1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
 
+=======
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+
+        legalbutton.setBackground(new java.awt.Color(204, 255, 0));
+        legalbutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
         legalbutton.setText("Legal");
         legalbutton.setBorder(null);
         legalbutton.addActionListener(new java.awt.event.ActionListener() {
@@ -135,6 +151,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD
+=======
+        grocerybutton.setBackground(new java.awt.Color(204, 255, 0));
+        grocerybutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
         grocerybutton.setText("Grocery");
         grocerybutton.setBorder(null);
         grocerybutton.addActionListener(new java.awt.event.ActionListener() {
@@ -143,6 +164,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD
+=======
+        maidbutton.setBackground(new java.awt.Color(204, 255, 0));
+        maidbutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
         maidbutton.setText("Household");
         maidbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +176,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD
+=======
+        therpistbutton.setBackground(new java.awt.Color(204, 255, 0));
+        therpistbutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
         therpistbutton.setText("Therapy");
         therpistbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,6 +188,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD
+=======
+        hotelbutton.setBackground(new java.awt.Color(204, 255, 0));
+        hotelbutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
         hotelbutton.setText("Food");
         hotelbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,6 +209,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD
+=======
+        cartbutton.setBackground(new java.awt.Color(204, 255, 0));
+        cartbutton.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
         cartbutton.setText("Cart");
         cartbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -180,6 +221,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD
+=======
+        cardbutton.setBackground(new java.awt.Color(204, 255, 0));
+        cardbutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
         cardbutton.setText("Add Card");
         cardbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,7 +274,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setLeftComponent(jPanel1);
 
+<<<<<<< HEAD
         container.setBackground(new java.awt.Color(255, 255, 255));
+=======
+        container.setBackground(new java.awt.Color(0, 204, 204));
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
         container.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         title2.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
@@ -238,7 +288,11 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("See our bird flying? That's your guide in this app world");
+<<<<<<< HEAD
         container.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
+=======
+        container.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, -1, -1));
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel2.setText("Hey we know you are missing all the fun sitting at home!");
@@ -256,12 +310,21 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         container.add(birdiemessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 20, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+<<<<<<< HEAD
         jLabel5.setText("© All Copyrights, PAY technologies and private Limited");
         container.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 720, -1, 30));
 
         title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/customer_panel_1 copy.gif"))); // NOI18N
         title.setText("jLabel3");
         container.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 940, 820));
+=======
+        jLabel5.setText("© All Copyrights, technologies and private Limited");
+        container.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 640, -1, 30));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/CustomerRole/mainbird.gif"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        container.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 570, 290));
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
 
         jSplitPane1.setRightComponent(container);
 
@@ -354,12 +417,19 @@ jSplitPane1.setRightComponent(mm);
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+<<<<<<< HEAD
+=======
+    private javax.swing.JLabel jLabel6;
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton legalbutton;
     private javax.swing.JButton maidbutton;
     private javax.swing.JButton therpistbutton;
+<<<<<<< HEAD
     private javax.swing.JLabel title;
+=======
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
     private javax.swing.JLabel title2;
     // End of variables declaration//GEN-END:variables
 }

@@ -25,10 +25,14 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author shikha
 =======
  * @author parth
 >>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
+=======
+ * @author vikas
+>>>>>>> 4f99bc314fd54d079789b1d64a69a58790ce175b
  */
 public class ManageOrdersPanel extends javax.swing.JPanel {
 
