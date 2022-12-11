@@ -12,7 +12,11 @@ import javax.swing.JOptionPane;
 
 /**
  *
+<<<<<<< HEAD
  * @author shikha
+=======
+ * @author  vikas 
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
  */
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
@@ -78,7 +82,11 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 96, 330, 20));
 
+<<<<<<< HEAD
         updatestorepanel.setBackground(new java.awt.Color(0, 204, 204));
+=======
+        updatestorepanel.setBackground(new java.awt.Color(204, 255, 255));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
 
         nameText.setForeground(new java.awt.Color(72, 72, 72));
 
@@ -110,8 +118,14 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD
         updateButton.setBackground(new java.awt.Color(204, 255, 0));
         updateButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+=======
+        updateButton.setBackground(new java.awt.Color(0, 0, 0));
+        updateButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        updateButton.setForeground(new java.awt.Color(255, 255, 255));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         updateButton.setText("Update");
         updateButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         updateButton.addActionListener(new java.awt.event.ActionListener() {
@@ -170,7 +184,11 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         add(updatestorepanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 540, 340));
 
+<<<<<<< HEAD
         ManageOrdersButton.setBackground(new java.awt.Color(204, 255, 0));
+=======
+        ManageOrdersButton.setBackground(new java.awt.Color(240, 248, 255));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         ManageOrdersButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ManageOrdersButton.setText("Manage Orders");
         ManageOrdersButton.addActionListener(new java.awt.event.ActionListener() {
@@ -180,7 +198,11 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(ManageOrdersButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 350, 290, 70));
 
+<<<<<<< HEAD
         ManageGroceryInventoryButton.setBackground(new java.awt.Color(204, 255, 0));
+=======
+        ManageGroceryInventoryButton.setBackground(new java.awt.Color(240, 248, 255));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         ManageGroceryInventoryButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ManageGroceryInventoryButton.setText("Manage Grocery List");
         ManageGroceryInventoryButton.addActionListener(new java.awt.event.ActionListener() {

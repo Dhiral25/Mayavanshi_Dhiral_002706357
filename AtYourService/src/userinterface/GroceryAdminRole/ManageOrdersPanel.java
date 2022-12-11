@@ -24,7 +24,11 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
+<<<<<<< HEAD
  * @author shikha
+=======
+ * @author parth
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
  */
 public class ManageOrdersPanel extends javax.swing.JPanel {
 
@@ -161,20 +165,34 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
         orderTable.setRowHeight(25);
         jScrollPane1.setViewportView(orderTable);
 
+<<<<<<< HEAD
         acceptBtn.setBackground(new java.awt.Color(240, 248, 255));
         acceptBtn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         acceptBtn.setText("Accept");
         acceptBtn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+=======
+        acceptBtn.setBackground(new java.awt.Color(204, 255, 0));
+        acceptBtn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        acceptBtn.setText("Accept");
+        acceptBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         acceptBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 acceptBtnActionPerformed(evt);
             }
         });
 
+<<<<<<< HEAD
         rejectBtn.setBackground(new java.awt.Color(240, 248, 255));
         rejectBtn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rejectBtn.setText("Reject");
         rejectBtn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+=======
+        rejectBtn.setBackground(new java.awt.Color(204, 255, 0));
+        rejectBtn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rejectBtn.setText("Reject");
+        rejectBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         rejectBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rejectBtnActionPerformed(evt);
@@ -210,6 +228,10 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
         assignLabel.setText("Assign Delivery Man");
 
         assignCombo.setForeground(new java.awt.Color(72, 72, 72));
+<<<<<<< HEAD
+=======
+        assignCombo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         assignCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignComboActionPerformed(evt);
@@ -225,10 +247,17 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< HEAD
         Backbutton.setBackground(new java.awt.Color(240, 248, 255));
         Backbutton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
         Backbutton.setText("Back");
         Backbutton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+=======
+        Backbutton.setBackground(new java.awt.Color(204, 255, 0));
+        Backbutton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        Backbutton.setText("Back");
+        Backbutton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         Backbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BackbuttonActionPerformed(evt);
@@ -275,9 +304,15 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
+<<<<<<< HEAD
                 .addGap(31, 31, 31)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(142, 142, 142))
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(167, 167, 167))
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -328,6 +363,7 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
                         .addGap(49, 49, 49)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33))
@@ -335,6 +371,15 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
                         .addGap(63, 63, 63)
                         .addComponent(jLabel4)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+=======
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33))))
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -352,7 +397,11 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
             assignLabel.setVisible(true);
             assignCombo.setVisible(true);
             finishBtn.setVisible(true);
+<<<<<<< HEAD
             }else{JOptionPane.showMessageDialog(this, "Hey Sorry, No Delivery Person Available righnow!");}
+=======
+            }else{JOptionPane.showMessageDialog(this, "Hey Sorry, We don't have a Delivery Person Available righnow!");}
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         } else {
             JOptionPane.showMessageDialog(this, "Select a order first");
         }// TODO add your handling code here:

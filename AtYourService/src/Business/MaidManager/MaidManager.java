@@ -6,9 +6,15 @@ package Business.MaidManager;
 
 /**
  *
+<<<<<<< HEAD
  * @author yashjain
  */
 import Business.Orders.Maid1Directory;
+=======
+ * @author vikas
+ */
+import Business.Orders.MaidDirectory;
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
 import Business.Orders.MaidOrder;
 import Business.UserAccount.UserAccount;
 import java.util.ArrayList;
@@ -152,3 +158,7 @@ public class MaidManager {
         MaidManager.count = count;
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
