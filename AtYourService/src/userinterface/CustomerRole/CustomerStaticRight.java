@@ -35,29 +35,28 @@ public class CustomerStaticRight extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        container.setBackground(new java.awt.Color(255, 255, 255));
+        container.setBackground(new java.awt.Color(0, 204, 204));
         container.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel5.setText("© All Copyrights, PAY technologies and private Limited");
-        container.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 730, -1, 30));
+        jLabel5.setText("© All Copyrights, technologies and private Limited");
+        container.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 760, -1, 30));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel6.setText("Go Book Now!!!!");
         container.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 580, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel7.setText("Hey we hope that you are not Facing any Difficulties! ");
         container.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel8.setText("What next? Look on to your left! Click Some button ");
         container.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, -1, -1));
 
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/customer_panel_1 copy.gif"))); // NOI18N
-        title.setText("jLabel3");
-        container.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 940, 820));
+        title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hummingbird.jpeg"))); // NOI18N
+        container.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 940, 820));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
