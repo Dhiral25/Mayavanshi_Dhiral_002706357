@@ -3,11 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/MaidAdminRole/AdminWorkAreaJPanel.java</file>
-            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/GroceryAdminRole/AdminWorkAreaJPanel.java</file>
-            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/GroceryAdminRole/ManageOrdersPanel.java</file>
-            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/LegalAdminRole/AdminWorkAreaJPanel.java</file>
-            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/Business/Grocery/Grocery.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerSelectGrocery.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerOrderHotelJPanel.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerStaticRight.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/Business/GroceryManager/GroceryManager.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerPaymentPanels.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/OrderGroceryPanel.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerAddCardDetailsPanel_1.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/Business/HospitalManager/HospitalManager.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerCart.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerAreaJPanel.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/Business/HospitalManager/HospitalManagerDirectory.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/Business/GroceryManager/GroceryManagerDirectory.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerUpdateInformation.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/CustomerRole/CustomerOrderTherapistPanel.java</file>
         </group>
     </open-files>
 </project-private>
