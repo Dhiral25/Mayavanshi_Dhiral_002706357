@@ -12,11 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
-<<<<<<< HEAD
  * @author shikha
-=======
- * @author  vikas 
->>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
  */
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
@@ -76,17 +72,12 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         enterpriseLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         enterpriseLabel.setText("Welcome:");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 120, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 120, 30));
 
         valueLabel.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 96, 330, 20));
 
-<<<<<<< HEAD
         updatestorepanel.setBackground(new java.awt.Color(0, 204, 204));
-=======
-        updatestorepanel.setBackground(new java.awt.Color(204, 255, 255));
->>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
 
         nameText.setForeground(new java.awt.Color(72, 72, 72));
 
@@ -118,14 +109,8 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-<<<<<<< HEAD
         updateButton.setBackground(new java.awt.Color(204, 255, 0));
         updateButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
-=======
-        updateButton.setBackground(new java.awt.Color(0, 0, 0));
-        updateButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
-        updateButton.setForeground(new java.awt.Color(255, 255, 255));
->>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         updateButton.setText("Update");
         updateButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         updateButton.addActionListener(new java.awt.event.ActionListener() {
@@ -138,27 +123,29 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         updatestorepanel.setLayout(updatestorepanelLayout);
         updatestorepanelLayout.setHorizontalGroup(
             updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(updatestorepanelLayout.createSequentialGroup()
-                .addGroup(updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(updatestorepanelLayout.createSequentialGroup()
-                        .addGap(111, 111, 111)
-                        .addGroup(updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nameLabel)
-                            .addComponent(phoneLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(locationLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(phoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nameText, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(locationText, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(updatestorepanelLayout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 468, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(32, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, updatestorepanelLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(updateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(197, 197, 197))
+            .addGroup(updatestorepanelLayout.createSequentialGroup()
+                .addGroup(updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(updatestorepanelLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 468, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(updatestorepanelLayout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addGroup(updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(phoneLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(locationLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(nameLabel))
+                        .addGap(28, 28, 28)
+                        .addGroup(updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(phoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(locationText, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(nameText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         updatestorepanelLayout.setVerticalGroup(
             updatestorepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -179,16 +166,12 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                     .addComponent(locationText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addComponent(updateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
-        add(updatestorepanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 540, 340));
+        add(updatestorepanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 520, 340));
 
-<<<<<<< HEAD
         ManageOrdersButton.setBackground(new java.awt.Color(204, 255, 0));
-=======
-        ManageOrdersButton.setBackground(new java.awt.Color(240, 248, 255));
->>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         ManageOrdersButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ManageOrdersButton.setText("Manage Orders");
         ManageOrdersButton.addActionListener(new java.awt.event.ActionListener() {
@@ -196,13 +179,9 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 ManageOrdersButtonActionPerformed(evt);
             }
         });
-        add(ManageOrdersButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 350, 290, 70));
+        add(ManageOrdersButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 310, 230, 70));
 
-<<<<<<< HEAD
         ManageGroceryInventoryButton.setBackground(new java.awt.Color(204, 255, 0));
-=======
-        ManageGroceryInventoryButton.setBackground(new java.awt.Color(240, 248, 255));
->>>>>>> 0b1d5158dacf5470d6f758671b2b457607ae88fe
         ManageGroceryInventoryButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         ManageGroceryInventoryButton.setText("Manage Grocery List");
         ManageGroceryInventoryButton.addActionListener(new java.awt.event.ActionListener() {
@@ -210,10 +189,10 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 ManageGroceryInventoryButtonActionPerformed(evt);
             }
         });
-        add(ManageGroceryInventoryButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 210, 290, 70));
+        add(ManageGroceryInventoryButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 230, 70));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.gif"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 140, 480, 370));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/grocery1.jpeg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 30, 680, 480));
     }// </editor-fold>//GEN-END:initComponents
 
     private void locationTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_locationTextActionPerformed

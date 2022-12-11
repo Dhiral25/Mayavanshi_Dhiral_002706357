@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.GroceryAdminRole;
+package userinterface.HospitalAdminRole;
 
 import Business.EcoSystem;
-import Business.Grocery.Grocery;
+import Business.HospitalManager.HospitalManager;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -21,35 +21,33 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author shikha
  */
-public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
+public class ManageTherapistInventoryPanel extends javax.swing.JPanel {
 
     JPanel userProcessContainer;
     EcoSystem ecosystem;
-    Grocery grocery;
+    HospitalManager hospitalManager;
     DefaultTableModel model;
     UserAccount ua;
 
     /**
      * Creates new form ManageRestaurantMenu
      */
-    public ManageGroceryInventoryPanel(JPanel userProcessContainer, EcoSystem system, Grocery groc, UserAccount ua) {
+    public ManageTherapistInventoryPanel(JPanel userProcessContainer, EcoSystem system, HospitalManager hospitalManager, UserAccount ua) {
         initComponents();
         ecosystem = system;
+        this.ua= ua;
         this.userProcessContainer = userProcessContainer;
-        grocery = groc;
-        this.ua = ua;
+        this.hospitalManager = hospitalManager;
         model = new DefaultTableModel();
         menuTable.setModel(model);
-        model.addColumn("Item Name");
+        model.addColumn("Therapy Name");
         model.addColumn("Price");
-        System.out.println(grocery.getMenu());
-        
         showDeleteList();
         viewMenuList();
     }
 
     public void viewMenuList() {
-        HashMap<String, String> menu = grocery.getMenu();
+        HashMap<String, String> menu = hospitalManager.getMenu();
         if (menu.size() > 0) {
             for (Map.Entry<String, String> e : menu.entrySet()) {
                 model.addRow(new Object[]{
@@ -61,8 +59,8 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
     }
 
     public void showDeleteList() {
-        HashMap<String, String> menu = grocery.getMenu();
-        if (grocery.getMenu().size() > 0) {
+        HashMap<String, String> menu = hospitalManager.getMenu();
+        if (hospitalManager.getMenu().size() > 0) {
             for (Map.Entry<String, String> e : menu.entrySet()) {
                 itemsCombo.addItem(e.getKey());
             }
@@ -75,7 +73,6 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         menuTable = new javax.swing.JTable();
         btnBack = new javax.swing.JButton();
-        title = new javax.swing.JLabel();
         AddItemPanel = new javax.swing.JPanel();
         AddItemLabel = new javax.swing.JLabel();
         itemText = new javax.swing.JTextField();
@@ -95,8 +92,6 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         deleteButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 204, 204));
 
@@ -127,16 +122,11 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
             }
         });
 
-        title.setBackground(new java.awt.Color(255, 51, 0));
-        title.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
-        title.setForeground(new java.awt.Color(0, 83, 170));
-        title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
         AddItemPanel.setBackground(new java.awt.Color(0, 204, 204));
 
-        AddItemLabel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        AddItemLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         AddItemLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AddItemLabel.setText("Add Item");
+        AddItemLabel.setText("Add Therapy");
 
         itemText.setForeground(new java.awt.Color(72, 72, 72));
         itemText.addActionListener(new java.awt.event.ActionListener() {
@@ -150,7 +140,7 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         AddItemNameLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         AddItemNameLabel.setForeground(new java.awt.Color(72, 72, 72));
         AddItemNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        AddItemNameLabel.setText("Item");
+        AddItemNameLabel.setText("Name");
 
         AddItemPriceLabel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         AddItemPriceLabel.setForeground(new java.awt.Color(72, 72, 72));
@@ -171,54 +161,54 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         AddItemPanel.setLayout(AddItemPanelLayout);
         AddItemPanelLayout.setHorizontalGroup(
             AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddItemPanelLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(AddItemNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddItemPriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(priceText)
+                    .addComponent(itemText))
+                .addGap(29, 29, 29))
             .addGroup(AddItemPanelLayout.createSequentialGroup()
                 .addGroup(AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AddItemPanelLayout.createSequentialGroup()
-                        .addGap(129, 129, 129)
-                        .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AddItemPanelLayout.createSequentialGroup()
                         .addGap(33, 33, 33)
-                        .addGroup(AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AddItemLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(AddItemPanelLayout.createSequentialGroup()
-                                    .addComponent(AddItemNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(itemText))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, AddItemPanelLayout.createSequentialGroup()
-                                    .addComponent(AddItemPriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(priceText, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(52, Short.MAX_VALUE))
+                        .addComponent(AddItemLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AddItemPanelLayout.createSequentialGroup()
+                        .addGap(129, 129, 129)
+                        .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
         AddItemPanelLayout.setVerticalGroup(
             AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AddItemPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(AddItemLabel)
-                .addGap(28, 28, 28)
+                .addGap(20, 20, 20)
                 .addGroup(AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AddItemNameLabel)
-                    .addComponent(itemText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(itemText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddItemNameLabel))
+                .addGap(24, 24, 24)
                 .addGroup(AddItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(AddItemPriceLabel)
                     .addComponent(priceText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         UpdateItemPanel.setBackground(new java.awt.Color(0, 204, 204));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Update / Delete an Item");
+        jLabel4.setText("Update / Delete Doctor Session");
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(72, 72, 72));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel5.setText("Select Item");
+        jLabel5.setText("Select Name");
 
         itemsCombo.setForeground(new java.awt.Color(72, 72, 72));
         itemsCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--None" }));
@@ -231,7 +221,7 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         ItemPanel.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         ItemPanel.setForeground(new java.awt.Color(72, 72, 72));
         ItemPanel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        ItemPanel.setText("Item");
+        ItemPanel.setText("Session");
 
         updateItemText.setForeground(new java.awt.Color(72, 72, 72));
         updateItemText.addActionListener(new java.awt.event.ActionListener() {
@@ -271,43 +261,39 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         UpdateItemPanel.setLayout(UpdateItemPanelLayout);
         UpdateItemPanelLayout.setHorizontalGroup(
             UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(UpdateItemPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(UpdateItemPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(itemsCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(UpdateItemPanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(ItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(updateItemText, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6))
+                    .addGroup(UpdateItemPanelLayout.createSequentialGroup()
+                        .addComponent(PriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(updatePriceText, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
             .addGroup(UpdateItemPanelLayout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addComponent(updateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
-            .addGroup(UpdateItemPanelLayout.createSequentialGroup()
-                .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(UpdateItemPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UpdateItemPanelLayout.createSequentialGroup()
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(itemsCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, UpdateItemPanelLayout.createSequentialGroup()
-                                    .addGap(61, 61, 61)
-                                    .addComponent(PriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(updatePriceText))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, UpdateItemPanelLayout.createSequentialGroup()
-                                    .addGap(49, 49, 49)
-                                    .addComponent(ItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(updateItemText, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(UpdateItemPanelLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(43, 43, 43))
         );
         UpdateItemPanelLayout.setVerticalGroup(
             UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(UpdateItemPanelLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addContainerGap()
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(itemsCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -316,84 +302,64 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
                     .addComponent(updateItemText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ItemPanel))
                 .addGap(31, 31, 31)
-                .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(updatePriceText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PriceLabel))
+                .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PriceLabel)
+                    .addComponent(updatePriceText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
-                .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(updateButton, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
-                    .addComponent(deleteButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addGroup(UpdateItemPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(updateButton, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                    .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/add-item.png"))); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("View");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/remove-item.png"))); // NOI18N
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel3.setText("View your Orders");
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/orders.jpeg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/doctor.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(UpdateItemPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(AddItemPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(UpdateItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                        .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 1363, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(43, 43, 43)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(54, 54, 54)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(205, 205, 205)
-                                .addComponent(jLabel3)))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 587, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(244, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                .addGap(16, 16, 16)
+                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(AddItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(47, 47, 47)
                         .addComponent(UpdateItemPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(80, 80, 80)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 464, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(720, Short.MAX_VALUE))
+                        .addComponent(jLabel2)))
+                .addContainerGap(966, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -411,9 +377,9 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         if (!isValid) {
             return;
         }
-        HashMap<String, String> menu = grocery.getMenu();
+        HashMap<String, String> menu = hospitalManager.getMenu();
         menu.put(itemText.getText(), priceText.getText());
-        grocery.setMenu(menu);
+        hospitalManager.setMenu(menu);
         JOptionPane.showMessageDialog(this, "Item added successfully");
         itemsCombo.addItem(itemText.getText());
         System.out.println(itemText.getText() + " test " + priceText.getText());
@@ -433,7 +399,7 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
     }
     private void itemsComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemsComboActionPerformed
         // TODO add your handling code here:
-        HashMap<String, String> menu = grocery.getMenu();
+        HashMap<String, String> menu = hospitalManager.getMenu();
         if (itemsCombo.getSelectedItem() != null) {
             String selectedItem = (String) itemsCombo.getSelectedItem();
             for (Map.Entry<String, String> e : menu.entrySet()) {
@@ -467,7 +433,7 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
         } else if (!validateFields(updateItemText.getText(), updatePriceText.getText())) {
             return;
         }
-        HashMap<String, String> menu = grocery.getMenu();
+        HashMap<String, String> menu = hospitalManager.getMenu();
         if (itemsCombo.getSelectedItem() != null) {
             String selectedItem = (String) itemsCombo.getSelectedItem();
             for (Map.Entry<String, String> e : menu.entrySet()) {
@@ -478,7 +444,7 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
                 }
             }
         }
-        grocery.setMenu(menu);
+        hospitalManager.setMenu(menu);
         String selectedItem = (String) itemsCombo.getSelectedItem();
         itemsCombo.getSelectedIndex();
         for (int i = 0; i < menuTable.getRowCount(); i++) {
@@ -504,7 +470,7 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Select a value from dropdown");
             return;
         }
-        HashMap<String, String> menu = grocery.getMenu();
+        HashMap<String, String> menu = hospitalManager.getMenu();
         String selectedItem = (String) itemsCombo.getSelectedItem();
         itemsCombo.getSelectedIndex();
         if (itemsCombo.getSelectedItem() != null) {
@@ -525,15 +491,15 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
             }//end of if block
         }
         
-        grocery.setMenu(menu);
-        System.out.println(menu.size() + "jsdje " + grocery.getMenu().size());
+        hospitalManager.setMenu(menu);
+        System.out.println(menu.size() + "jsdje " + hospitalManager.getMenu().size());
         reset();
         // TODO add your handling code here:
 
     }//GEN-LAST:event_deleteButtonActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-       AdminWorkAreaJPanel dm= new AdminWorkAreaJPanel(userProcessContainer, ua, ecosystem);
+        AdminWorkAreaJPanel dm= new AdminWorkAreaJPanel(userProcessContainer, ua, ecosystem);
         userProcessContainer.add("manageNetworkJPanel",dm);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -555,14 +521,11 @@ public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> itemsCombo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable menuTable;
     private javax.swing.JTextField priceText;
-    private javax.swing.JLabel title;
     private javax.swing.JButton updateButton;
     private javax.swing.JTextField updateItemText;
     private javax.swing.JTextField updatePriceText;
