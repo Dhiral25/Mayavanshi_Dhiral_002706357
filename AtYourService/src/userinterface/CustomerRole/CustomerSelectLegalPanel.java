@@ -130,7 +130,6 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
         LegalserviceTable = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel3 = new javax.swing.JLabel();
         AddButton = new javax.swing.JButton();
         itemText = new javax.swing.JTextField();
@@ -139,9 +138,9 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
         BookAppointment = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 204, 204));
 
-        title.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        title.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         title.setText("Welcome");
 
@@ -158,6 +157,8 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(cartTable);
 
+        Backbutton.setBackground(new java.awt.Color(204, 255, 0));
+        Backbutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         Backbutton.setText("Back");
         Backbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -165,7 +166,7 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
         LegalserviceTable.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         LegalserviceTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -187,7 +188,7 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(LegalserviceTable);
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Please select a consultancy");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -201,7 +202,8 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
         jLabel3.setText("Consultation Type");
         jLabel3.setAutoscrolls(true);
 
-        AddButton.setBackground(new java.awt.Color(255, 255, 255));
+        AddButton.setBackground(new java.awt.Color(204, 255, 0));
+        AddButton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         AddButton.setText("Add");
         AddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,13 +226,8 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addComponent(jLabel3)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
-                        .addComponent(itemText, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addComponent(itemText, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(71, 71, 71))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,22 +253,22 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(itemText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jDateChooser1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addComponent(jLabel1)
                 .addGap(31, 31, 31)
                 .addComponent(AddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Your Quick Cart View");
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jPanel2.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
 
+        BookAppointment.setBackground(new java.awt.Color(204, 255, 0));
+        BookAppointment.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         BookAppointment.setText("Book Appointment");
         BookAppointment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -434,7 +431,6 @@ public class CustomerSelectLegalPanel extends javax.swing.JPanel {
     private javax.swing.JTable LegalserviceTable;
     private javax.swing.JTable cartTable;
     private javax.swing.JTextField itemText;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

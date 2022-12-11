@@ -113,13 +113,12 @@ public class CustomerUpdateInformation extends javax.swing.JPanel {
         updateEmailTxt = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 204, 204));
         setForeground(new java.awt.Color(72, 72, 72));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 83, 170));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Update Details");
+        jLabel8.setText("UPDATE DETAILS");
 
         updateNameText.setForeground(new java.awt.Color(72, 72, 72));
         updateNameText.addActionListener(new java.awt.event.ActionListener() {
@@ -154,8 +153,8 @@ public class CustomerUpdateInformation extends javax.swing.JPanel {
 
         updateAddressText.setForeground(new java.awt.Color(72, 72, 72));
 
-        updateButton.setBackground(new java.awt.Color(0, 83, 170));
-        updateButton.setForeground(new java.awt.Color(255, 255, 255));
+        updateButton.setBackground(new java.awt.Color(204, 255, 0));
+        updateButton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         updateButton.setText("Update");
         updateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,8 +162,8 @@ public class CustomerUpdateInformation extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(0, 83, 170));
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setBackground(new java.awt.Color(204, 255, 0));
+        btnBack.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -192,8 +191,8 @@ public class CustomerUpdateInformation extends javax.swing.JPanel {
                 .addGap(19, 19, 19)
                 .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 372, Short.MAX_VALUE)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(244, 244, 244))
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(158, 158, 158))
             .addGroup(layout.createSequentialGroup()
                 .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

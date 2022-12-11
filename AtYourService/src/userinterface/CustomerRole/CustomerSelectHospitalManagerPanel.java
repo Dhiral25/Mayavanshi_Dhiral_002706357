@@ -141,16 +141,15 @@ public class CustomerSelectHospitalManagerPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         itemText1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         AddButton = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         BookAppointment = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 204, 204));
 
-        title.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        title.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         title.setText("Welcome");
 
         cartTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -166,15 +165,16 @@ public class CustomerSelectHospitalManagerPanel extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(cartTable);
 
-        Backbutton.setBackground(new java.awt.Color(240, 248, 255));
-        Backbutton.setText("Back");
+        Backbutton.setBackground(new java.awt.Color(204, 255, 0));
+        Backbutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        Backbutton.setText("BACK");
         Backbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BackbuttonActionPerformed(evt);
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
         LegalserviceTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -213,7 +213,9 @@ public class CustomerSelectHospitalManagerPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel1.setText("Select Date");
 
-        AddButton.setText("Add");
+        AddButton.setBackground(new java.awt.Color(204, 255, 0));
+        AddButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AddButton.setText("ADD");
         AddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddButtonActionPerformed(evt);
@@ -225,21 +227,16 @@ public class CustomerSelectHospitalManagerPanel extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(60, 60, 60)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itemText1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(itemText1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(itemText, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itemText, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(42, 42, 42))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -268,26 +265,25 @@ public class CustomerSelectHospitalManagerPanel extends javax.swing.JPanel {
                     .addComponent(jLabel4)
                     .addComponent(itemText1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(19, 19, 19)
                 .addComponent(AddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Your Quick Cart View");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jPanel2.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Wanna do a quick checkout? \nClick the button Below");
 
-        BookAppointment.setBackground(new java.awt.Color(240, 248, 255));
+        BookAppointment.setBackground(new java.awt.Color(204, 255, 0));
+        BookAppointment.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         BookAppointment.setText("Book an Appointment");
         BookAppointment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -327,9 +323,9 @@ public class CustomerSelectHospitalManagerPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(Backbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(78, 78, 78)
-                        .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 509, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(303, 303, 303)
+                        .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(71, 71, 71)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(92, 92, 92)
@@ -343,25 +339,25 @@ public class CustomerSelectHospitalManagerPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(Backbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap()
+                        .addComponent(Backbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(71, 71, 71)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(71, 71, 71)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(202, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -466,7 +462,6 @@ public class CustomerSelectHospitalManagerPanel extends javax.swing.JPanel {
     private javax.swing.JTable cartTable;
     private javax.swing.JTextField itemText;
     private javax.swing.JTextField itemText1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

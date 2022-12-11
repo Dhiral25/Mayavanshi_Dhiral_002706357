@@ -177,7 +177,6 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         LegalserviceTable = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
         itemText = new javax.swing.JTextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel1 = new javax.swing.JLabel();
         AddButton = new javax.swing.JButton();
         Backbutton = new javax.swing.JButton();
@@ -207,7 +206,7 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         jLabel13 = new javax.swing.JLabel();
         placeButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 204, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LegalserviceTable.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -242,23 +241,24 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
 
         itemText.setForeground(new java.awt.Color(72, 72, 72));
         add(itemText, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 332, 145, -1));
-        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 417, 145, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Select Date");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 417, 115, 26));
 
-        AddButton.setBackground(new java.awt.Color(240, 248, 255));
+        AddButton.setBackground(new java.awt.Color(204, 255, 0));
+        AddButton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         AddButton.setText("Add");
         AddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddButtonActionPerformed(evt);
             }
         });
-        add(AddButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 474, 113, 45));
+        add(AddButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 460, 113, 45));
 
-        Backbutton.setBackground(new java.awt.Color(240, 248, 255));
+        Backbutton.setBackground(new java.awt.Color(204, 255, 0));
+        Backbutton.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         Backbutton.setText("Back");
         Backbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -277,7 +277,7 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         itemText1.setForeground(new java.awt.Color(72, 72, 72));
         add(itemText1, new org.netbeans.lib.awtextra.AbsoluteConstraints(259, 376, 145, -1));
 
-        jPanel1.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -402,10 +402,10 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 85, 172, 44));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cleaning_two.png"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/maidrole.jpg"))); // NOI18N
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, 450, 260));
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Your Quick Cart View");
         jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -421,8 +421,8 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         removeItemText.setForeground(new java.awt.Color(72, 72, 72));
         add(removeItemText, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 300, 190, -1));
 
-        removeButton.setBackground(new java.awt.Color(255, 255, 255));
-        removeButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        removeButton.setBackground(new java.awt.Color(204, 255, 0));
+        removeButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         removeButton.setText("Remove");
         removeButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         removeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -432,8 +432,8 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         });
         add(removeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 349, 100, 40));
 
-        clearButton.setBackground(new java.awt.Color(255, 255, 255));
-        clearButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        clearButton.setBackground(new java.awt.Color(204, 255, 0));
+        clearButton.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         clearButton.setText("Clear ");
         clearButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         clearButton.addActionListener(new java.awt.event.ActionListener() {
@@ -449,8 +449,8 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Wanna do a quick checkout? \nClick the button Below");
 
-        placeButton.setBackground(new java.awt.Color(204, 204, 204));
-        placeButton.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        placeButton.setBackground(new java.awt.Color(204, 255, 0));
+        placeButton.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         placeButton.setText("Place Order");
         placeButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         placeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -614,7 +614,6 @@ public class CustomerSelectMaidServicePanel extends javax.swing.JPanel {
     private javax.swing.JButton clearButton;
     private javax.swing.JTextField itemText;
     private javax.swing.JTextField itemText1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
