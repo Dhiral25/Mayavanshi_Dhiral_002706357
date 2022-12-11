@@ -17,7 +17,7 @@ import userinterface.SignUp.SignUp;
 
 /**
  *
- * @author vikas
+ * @author shikha
  */
 public class MainJFrame extends javax.swing.JFrame {
 
@@ -53,13 +53,12 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel1.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
 
-        logoutJButton.setBackground(new java.awt.Color(0, 83, 170));
-        logoutJButton.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
-        logoutJButton.setForeground(new java.awt.Color(255, 255, 255));
+        logoutJButton.setBackground(new java.awt.Color(204, 255, 0));
+        logoutJButton.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         logoutJButton.setText("LOGOUT");
-        logoutJButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
+        logoutJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         logoutJButton.setEnabled(false);
         logoutJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,10 +66,13 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 83, 170));
+        jLabel1.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel1.setFont(new java.awt.Font("Hoefler Text", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Welcome to HelpingHand");
+        jLabel1.setText("\" AtYourService \"");
+        jLabel1.setToolTipText("");
+        jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -95,7 +97,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setLeftComponent(jPanel1);
 
-        container.setBackground(new java.awt.Color(240, 248, 255));
+        container.setBackground(new java.awt.Color(255, 0, 51));
         container.setLayout(new java.awt.CardLayout());
         jSplitPane1.setRightComponent(container);
 

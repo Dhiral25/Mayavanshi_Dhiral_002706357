@@ -6,7 +6,7 @@ package Business.Orders;
 
 /**
  *
- * @author yashjain
+ * @author shikha
  */
 public class HotelOrder {
     private String item;

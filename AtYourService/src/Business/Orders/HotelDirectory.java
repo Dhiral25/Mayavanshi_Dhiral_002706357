@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author yashjain
+ * @author shikha
  */
 public class HotelDirectory {
     private ArrayList<HotelOrder> orderLists;

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author parthshah
+ * @author shikha
  */
 public class Maid1Directory {
     private ArrayList<MaidOrder> orderList;

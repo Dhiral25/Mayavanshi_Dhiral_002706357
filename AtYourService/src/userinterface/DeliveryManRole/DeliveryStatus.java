@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author yashj
+ * @author shikha
  */
 public class DeliveryStatus extends javax.swing.JPanel {
     JPanel userProcessContainer;
@@ -86,7 +86,7 @@ public class DeliveryStatus extends javax.swing.JPanel {
         title = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 204, 204));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(72, 72, 72));
@@ -95,9 +95,8 @@ public class DeliveryStatus extends javax.swing.JPanel {
 
         statusCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Picked Up", "In transit", "Delivered" }));
 
-        SubmitButton.setBackground(new java.awt.Color(0, 83, 170));
+        SubmitButton.setBackground(new java.awt.Color(204, 255, 0));
         SubmitButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
-        SubmitButton.setForeground(new java.awt.Color(255, 255, 255));
         SubmitButton.setText("Submit");
         SubmitButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         SubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -106,9 +105,8 @@ public class DeliveryStatus extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(0, 83, 170));
+        btnBack.setBackground(new java.awt.Color(204, 255, 0));
         btnBack.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
