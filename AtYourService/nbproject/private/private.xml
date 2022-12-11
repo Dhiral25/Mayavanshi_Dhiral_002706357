@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/MaidAdminRole/AdminWorkAreaJPanel.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/GroceryAdminRole/AdminWorkAreaJPanel.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/GroceryAdminRole/ManageOrdersPanel.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/userinterface/LegalAdminRole/AdminWorkAreaJPanel.java</file>
+            <file>file:/Users/shikhasingh/Desktop/Mayavanshi_Dhiral_002706357/AtYourService/src/Business/Grocery/Grocery.java</file>
+        </group>
     </open-files>
 </project-private>
