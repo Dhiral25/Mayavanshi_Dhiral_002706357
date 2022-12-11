@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author yashj
+ * @author vikas
  */
 public class ManageGroceryInventoryPanel extends javax.swing.JPanel {
 
