@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author DhiralM
+ * @author shikha
  */
 public class OrderGroceryPanel extends javax.swing.JPanel {
     
@@ -91,13 +91,12 @@ public class OrderGroceryPanel extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         cartTable = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         restListTable.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -136,7 +135,7 @@ public class OrderGroceryPanel extends javax.swing.JPanel {
         enterpriseLabel.setText("Grocery Store List");
         enterpriseLabel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        showMenuButton.setBackground(new java.awt.Color(255, 255, 255));
+        showMenuButton.setBackground(new java.awt.Color(204, 255, 0));
         showMenuButton.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
         showMenuButton.setText("Show Menu");
         showMenuButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -177,7 +176,7 @@ public class OrderGroceryPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 35, -1, -1));
 
-        jPanel2.setBackground(new java.awt.Color(240, 248, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 204, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -248,10 +247,6 @@ public class OrderGroceryPanel extends javax.swing.JPanel {
 
         add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 35, -1, 305));
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 440, 340));
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
-        jLabel3.setText("<html><h2>Looks like someone wants to cook today! <br>\nDont worry, order from our list of best shops<br>\nAnd if you dont want to cook! You know where to go? Our restaurant button! </html>\n");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 430, -1, -1));
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, 210, 191));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -328,7 +323,6 @@ public class OrderGroceryPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

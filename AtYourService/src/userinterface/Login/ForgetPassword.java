@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author vikas
+ * @author shikha
  */
 public class ForgetPassword extends javax.swing.JPanel {
 
@@ -57,17 +57,15 @@ public class ForgetPassword extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         AddBtn1 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        restPwdLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        restPwdLabel2.setForeground(new java.awt.Color(72, 72, 72));
+        restPwdLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         restPwdLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         restPwdLabel2.setText("Enter Your Email ID");
-        add(restPwdLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 122, 154, -1));
+        add(restPwdLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 170, -1));
 
         updateUsernameText.setForeground(new java.awt.Color(72, 72, 72));
         updateUsernameText.addActionListener(new java.awt.event.ActionListener() {
@@ -75,15 +73,14 @@ public class ForgetPassword extends javax.swing.JPanel {
                 updateUsernameTextActionPerformed(evt);
             }
         });
-        add(updateUsernameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 117, 171, -1));
+        add(updateUsernameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, 171, -1));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Enter Details");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 69, 145, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 145, -1));
 
-        AddBtn1.setBackground(new java.awt.Color(0, 83, 170));
-        AddBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        AddBtn1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         AddBtn1.setText("Back");
         AddBtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,19 +89,17 @@ public class ForgetPassword extends javax.swing.JPanel {
         });
         add(AddBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 21, 117, 49));
 
+        jButton1.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jButton1.setText("Send Email");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(326, 175, 144, 46));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 144, 46));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/forgot.gif"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 480, 460));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/worst-passwords-of-2014.jpeg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 130, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/forgotpwsd.gif"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 1390, 640));
     }// </editor-fold>//GEN-END:initComponents
 
     private void updateUsernameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateUsernameTextActionPerformed
@@ -122,9 +117,9 @@ public class ForgetPassword extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int Index = -1;
           for (int i = 0; i < customerList.size(); i++){
-              if(customerList.get(i).getEmail().equals(updateUsernameText.getText())){
+              if(customerList.get(i).getCust_email().equals(updateUsernameText.getText())){
                   System.out.println("Hey " + customerList.get(i).getName() + "\n" +"Did you forget your password?" + "\n" +"Your Passwrod is: " + system.getCustomerDirectory().getCustomerList().get(i).getAccountDetails().getPassword() +"\n" + "If you dont want to change your password or didn't request this, please ignore and delete this message");
-                  SendMail sendMail = new SendMail(customerList.get(i).getEmail(), "Your Password for HelpingHands","Hey " + customerList.get(i).getName() + "\n" +" Did you forget your password? Your Passwrod is: " + 
+                  SendMail sendMail = new SendMail(customerList.get(i).getCust_email(), "Your Password for HelpingHands","Hey " + customerList.get(i).getName() + "\n" +" Did you forget your password? Your Passwrod is: " + 
                           system.getCustomerDirectory().getCustomerList().get(i).getAccountDetails().getPassword() 
                   + "If you don't want to change your password or didn't request this, please ignore and delete this message");
                     Index = i;
@@ -152,7 +147,6 @@ public class ForgetPassword extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel restPwdLabel2;
     private javax.swing.JTextField updateUsernameText;
     // End of variables declaration//GEN-END:variables
