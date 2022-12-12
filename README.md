@@ -44,7 +44,8 @@ And can see when they have next consultation with the patient.
 
 Class Diagram :
 
-![Class Diagram_AtyourService](https://user-images.githubusercontent.com/114254713/206960943-57124a73-cbd5-481c-b96f-5c7651a7eaee.jpeg)
+![ClassDiagram_AtYourservice](https://user-images.githubusercontent.com/114254713/206964303-d750e877-5020-4866-842b-9ddb0f87953b.jpeg)
+
 
 
 
