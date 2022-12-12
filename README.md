@@ -42,6 +42,10 @@ Therapists when logged in they can change their basic information, and can add t
 And can see when they have next consultation with the patient. 
 
 
+Class Diagram :
+
+![Class Diagram_AtyourService](https://user-images.githubusercontent.com/114254713/206960943-57124a73-cbd5-481c-b96f-5c7651a7eaee.jpeg)
+
 
 
 
